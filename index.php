@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>W3.CSS Template</title>
+<head>
+
+
+</head>
+<title>ASL - Helper | Tables | Scenariocards</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
 <style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
+  html, body, h1, h2, h3, h4, h5, h6 {
+font-family: 'Baloo Thambi 2', cursive;
+}
+body {
+  font-size:18px;
+}
+
+  .marright {
+    margin-right:10px;
+  }
 </style>
 <body>
 
@@ -58,7 +68,7 @@ body {font-size:16px;}
 
 
   <div class="w3-container">
-    <h1><b>Rally Phase</b></h1>
+    <h3><b>Rally Phase</b></h3>
 
   </div>
 
@@ -89,21 +99,21 @@ body {font-size:16px;}
 
   <!-- Packages / Pricing Tables -->
   <div class="">
-    <div class="w3-half">
+    <div class="w3-half w3-padding-small">
       <ul class="w3-ul w3-light-grey">
-        <li class="w3-dark-grey w3-padding-small" style="padding:5px">START:</li>
-        <li  class="w3-padding-small"><span class="w3-blue w3-padding-small w3-round-xlarge">A</span> Reinforcements roll, place arriving reinforcements</li>
-        <li  class="w3-padding-small"><span class="w3-blue w3-padding-small w3-round-xlarge">A</span> Wind Change</li>
-        <li  class="w3-padding-small"><span class="w3-green w3-padding-small w3-round-xlarge">B</span> Recombine HS</li>
-        <li  class="w3-padding-small"><span class="w3-green w3-padding-small w3-round-xlarge">B</span> Recover SW/Gun</li>
+        <li class="w3-dark-grey w3-padding-small" style="padding:15px">START:</li>
+        <li  class="w3-padding-small" style="padding:5px"><span class="w3-blue w3-padding-small w3-round-xlarge marright">A</span> Reinforcements roll, place arriving reinforcements</li>
+        <li  class="w3-padding-small" style="padding:5px"><span class="w3-blue w3-padding-small w3-round-xlarge marright">A</span> Wind Change</li>
+        <li  class="w3-padding-small" style="padding:5px"><span class="w3-green w3-padding-small w3-round-xlarge marright">B</span> Recombine HS</li>
+        <li  class="w3-padding-small" style="padding:5px"><span class="w3-green w3-padding-small w3-round-xlarge marright">B</span> Recover SW/Gun</li>
       </ul>
       <ul class="w3-ul w3-light-grey" style="margin-top:15px">
         <li class="w3-dark-grey w3-padding-small" style="padding:5px">DURING:</li>
-        <li  class="w3-padding-small"><span style="margin-right:4px"class="w3-blue w3-padding-small w3-round-xlarge">A</span> Deploy squads</li>
-        <li  class="w3-padding-small"><span class="w3-blue w3-padding-small w3-round-xlarge">A</span> Scrounge Vehicle</li>
-        <li  class="w3-padding-small"><span class="w3-green w3-padding-small w3-round-xlarge">B</span> Repair</li>
-        <li  class="w3-padding-small"><span class="w3-green w3-padding-small w3-round-xlarge">B</span> Transfer SW/Prisoners</li>
-        <li  class="w3-padding-small"><span class="w3-green w3-padding-small w3-round-xlarge">B</span> Transfer SW/Prisoners</li>
+        <li  class="w3-padding-small"><span class="w3-blue w3-padding-small w3-round-xlarge">A</span> Deploy squads</li>
+        <li  class="w3-padding-small" style="padding:5px"><span class="w3-blue w3-padding-small w3-round-xlarge">A</span> Scrounge Vehicle</li>
+        <li  class="w3-padding-small" style="padding:5px"><span class="w3-green w3-padding-small w3-round-xlarge">B</span> Repair</li>
+        <li  class="w3-padding-small" style="padding:5px"><span class="w3-green w3-padding-small w3-round-xlarge">B</span> Transfer SW/Prisoners</li>
+        <li  class="w3-padding-small" style="padding:5px"><span class="w3-green w3-padding-small w3-round-xlarge">B</span> Transfer SW/Prisoners</li>
       </ul>
     </div>
 
