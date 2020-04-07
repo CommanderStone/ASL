@@ -1,0 +1,21 @@
+N;START
+A;Reinforcements roll, place arriving reinforcements
+A;Wind
+B;Recombine HS
+B;Recover SW/Gun
+X;X
+
+N;DURING:
+A;Deploy squads
+A;Scrounge Vehicle
+B;Repair
+B;Transfer SW/Prisoners
+A;First MMC Rally may be Self-Rally
+B;Rally
+X;X
+
+N;END
+B;Shocked/UK Recuperation
+B;Remove DM
+B;Claim Wall Advantage (ATTACKER first)
+X;X
