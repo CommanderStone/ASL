@@ -43,7 +43,7 @@ switch ($phase) {
 
   <!-- Header -->
   <div class="w3-bar w3-border w3-card-4" style="font-size:16px;font-weight:bold;">
-  <a href="?content=phaser&phase=rally" class="w3-bar-item w3-button" style="margin:2px;background-color:#007fff">Rally Phase</a>
+  <a href="?content=phaser&phase=rally" class="w3-bar-item w3-button" style="margin:2px;background-color:#007fff;">Rally Phase</a>
   <a href="?content=phaser&phase=prep" class="w3-bar-item w3-button" style="margin:2px;background-color:#ff8607;">Prep Fire Phase</a>
   <a href="?content=phaser&phase=movement" class="w3-bar-item w3-button" style="margin:2px;background-color:#0aa82a">Movement Phase</a>
   <a href="?content=phaser&phase=defensive" class="w3-bar-item w3-button" style="margin:2px;background-color:#c904c9;">Defensive Fire Phase</a>

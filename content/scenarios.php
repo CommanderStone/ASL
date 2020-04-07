@@ -109,9 +109,7 @@ div.wrapper {
 </style>
 
 <body>
-  <div class="header" id="myHeader">
-  <h2>My Header</h2>
-</div>
+
 <?php
   $dirs = array_filter(glob('scenarios/*'), 'is_dir');
   foreach ($dirs as $directory) {
