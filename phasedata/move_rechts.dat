@@ -1,0 +1,22 @@
+C;INFANTRY MOVEMENT;ifm;
+T;<b>4 MF</b>;MMC
+T;<b>3 MF</b>;Inexperienced MMC
+T;<b>6 MF</b>;SMC
+T;<b>3 MF</b>;Wounded SMC
+T;<b>4 MF</b>;mount, ride, dismount (all)
+T;<b>6 MF</b>;Rout
+T;<b>8 MF</b>;Berserk
+T;<b>12 MF (20 MF Gallop)</b>;Cavalry
+X;X
+
+C;SPECIAL MOVEMENT;sm;
+T;;<b>Elevation Change:</b> MF x 2 when entering a one level higher hex
+T;;<b>Minimum Move:</b> 1 MF required, become CX and pinned (NA if pushing Gun, loading/unloading)
+T;;<b>Infantry OVR:</b> only vs SMC, MF x 2 and NTC, target may retreat or immediate CC with possible continued movement
+T;;<b>Bypass:</b> one or two hexsides at cost of other terrain, three or more hexsides at double cost of other terrain
+T;;<b>Double Time:</b> MF + 2 at start of move, MF + 1 during move (NA if broken, wounded SMC, CX)
+T;;<b>Assault Movement:</b> move one location without using all MF (NA if PRC, Double Time, Hazardous Movement, Cavalry)
+T;;<b>Hazardous Movement:</b> –2 IFT DRM (FFMO, FFNAM NA) for pushing Gun, clearing Flame, roadblock, or rubble, descending paratroops, Fording preparing Set DC,Climbing, sewer movement
+T;;<b>Dash:</b> Area Fire or Case J To Hit DRM (CA change NA) when crossing road from non-Open Ground Location to non-Open Ground Location (NA if any other MF expenditure except SMOKE grenade placement attempt)
+T;;<b>Advance:</b> PAATC vs AFV, Difficult Terrain: CX if MF cost ≥ 4 MF or all non-Double Time MF (whichever is less) (NA if CX unless Climbing or Deep Stream Entry)
+X;X

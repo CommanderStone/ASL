@@ -1,0 +1,11 @@
+N;MISCELLANEOUS TABLESUSED IN THIS PHASE
+T;Ambush;A11.4;
+T;Concealment Gain;A12.121;
+T;Leader Creation;A18.2;
+T;Clearance Attempts;B24.7;
+T;German ATMM;C13.7;
+T;Tank Hunter-Hero Creation;G1.421;
+T;Tank Hunter-Hero ATMM;G1.4321
+T;Jungle Clearance Attempts;G2.7*;
+T;*Rule only; no table provided;
+X;X

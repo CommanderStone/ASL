@@ -1,0 +1,42 @@
+N;START (of Phase):
+A;Designate new Mortar Spotter
+X;X
+
+N;START (per moving unit/stack):
+A;Remove CX (no Double Time allowed)
+A;Declare Double Time (CX), Assault Movement,
+A;Dash, Sewer Entry, Climbing, Human Wave,
+A;Banzai, Dare-Death berserk, Gallop
+A;Radioless AFV Platoon Movement or NTC
+A;Flail Tank Minefield Clearance
+A;Enter/Abandon vehicle
+X;X
+
+N;DURING (per moving unit/stack):
+A;Move
+A;Bog Removal
+A;Recover SW/Gun, 1 MF [EXC: SMC from broken unit]
+A;Declare Rubble, Wire, Minefield, Set DC, Roadblock, Path, Panji Clearance (TI)
+A;Flame Clearance (TI)
+A;Hook/unhook Gun (TI)
+A;Place DC or Smoke Grenades
+A;Set DC
+A;Attempt Tank-Hunter Hero creation
+A;Place or Remove CE
+D;Resolve Residual FP, FFE, and Minefield attacks against moving units
+D;First Fire, Subsequent First Fire, FPF
+D;Attempt Motion and Smoke Dispenser Usage
+X;X
+
+N;END (per moving unit/stack):
+A;Infantry/Cavalry Search
+A;Sewer unit emergence
+A;Unarmed unit Scrounge
+A;Motion status or Stop MP
+X;X
+
+N;END (of Phase):
+A;Eliminate Vehicle/Cavalry in Blaze
+A;Remove berserk if without Known Enemy in LOS
+B;Remove Residual FP, Fire Lane, 1/2” SMOKE
+X;X
