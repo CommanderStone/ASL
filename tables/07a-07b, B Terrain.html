@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html><head>	<title> B. TERRAIN CHART </title>
+</head>
+
+<!-- ************************************************************************************ -->
+
+<style type="text/css">
+	html *
+	{
+		font-size: 8px !important;
+	}
+
+	@media print
+	{
+    	table.page-break { page-break-after:always; }
+	}
+
+	font.red {color:#DD0000;}
+	font.splat {face:times;}
+	td.align {text-align:left;}
+	tr.blue {background-color:#BEE6FF}
+</style>
+
+<!-- ************************************************************************************ -->
+<body bgcolor="#33BB33"><table width="100%" numrows="1" numcols="2">
+	<tr>
+		<td style="text-align:left; font-size:120%; font-weight:bold">
+			B. TERRAIN CHART
+		</td>
+</table>
+
+<table width="100%" numcols="16" cellborder="0" cellpadding="1" bgcolor="#F0F0F0" style="border:1 solid black; font-size:80%; border-collapse:collapse;">
+<tr valign="bottom">
+	<th align="left" width="2%">Rule#</th>
+	<th align="left" width="8%">Terrain</th>
+	<th align="left" width="5%">Example</th>
+	<th align="left" width="5%">LOS Obstacle/<br>Hindrance</th>
+	<th align="left" width="5%">TEM/<br>Indirect&dagger;</th>
+	<th align="left" width="5%">Infantry</th>
+	<th align="left" width="5%">Cavalry</th>
+	<th align="left" width="5%">Horse Drawn</th>
+	<th align="left" width="5%">Motorcycle</th>
+	<th align="left" width="5%">Armored Car</th>
+	<th align="left" width="5%">Fully Tracked</th>
+	<th align="left" width="5%">Halftrack</th>
+	<th align="left" width="5%">Truck</th>
+	<th align="left" width="5%">Kindle #/ Spread #</th>
+	<th align="left" width="7%">Fortifiable</th>
+	<th align="left" width="20%">Notes</th>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>P3.</td>
+	<td>Barb-Wire Fence</td>
+	<td align="align">StC20</td>
+	<td align="align">&mdash;</td>
+	<td align="align">0</td>
+	<td align="align">1+COT</td>
+	<td align="align">2+COT</td>
+	<td align="align">COT</td>
+	<td align="align">NA</td>
+	<td align="align">COT Be*</td>
+	<td align="align">COT Be*</td>
+	<td align="align">COT Be*</td>
+	<td align="align">COT Be*</td>
+	<td align="align">&mdash;</td>
+	<td align="align">&mdash;</td>
+	<td>No extra effect on MP</td>
+</tr>
+
+<tr valign="top">
+	<td>9.5 </td>
+	<td>Bocage</td>
+	<td align="align">2T1/2U2</td>
+	<td align="align">Level-One</td>
+	<td align="align">+2/+1 &copy;</td>
+	<td align="align">2+COT</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">Z+COT B</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">&mdash;</td>
+	<td align="align">&mdash;</td>
+	<td></td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>6. </td>
+	<td>Bridge (&half;)</td>
+	<td align="align">5Y8</td>
+	<td align="align">Hindrance</td>
+	<td align="align">FFMO: -1*/+1</td>
+	<td align="align">NA R</td>
+	<td align="align">NA R</td>
+	<td align="align">NA R</td>
+	<td align="align">NA R</td>
+	<td align="align">NA R D</td>
+	<td align="align">NA R D</td>
+	<td align="align">NA R D</td>
+	<td align="align">NA R D</td>
+	<td align="align">&mdash;</td>
+	<td align="align">No Ent/HIP Mines</td>
+	<td>FFMO if LOS is thru road depiction; otherwise +1; TEM: +1</td>
+</tr>
+
+<tr valign="top">
+	<td>12. </td>
+	<td> <font class="red">Brush (&half;)</font></td>
+	<td align="align">12AA10</td>
+	<td align="align">Hindrance</td>
+	<td align="align">0</td>
+	<td align="align">2</td>
+	<td align="align">2</td>
+	<td align="align">2</td>
+	<td align="align">4</td>
+	<td align="align">4</td>
+	<td align="align">2</td>
+	<td align="align">2</td>
+	<td align="align">6</td>
+	<td align="align">9/6</td>
+	<td align="align">Yes</td>
+	<td>Deep snow becomes Open Ground</td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>23. </td>
+	<td> <font class="red"><u>Building-Stone</u></font></td>
+	<td align="align">1J2</td>
+	<td align="align">1-3&frac12; Levels</td>
+	<td align="align">+3(+1*)</td>
+	<td align="align">2</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA P</td>
+	<td align="align">NA</td>
+	<td align="align">Z B</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">8/9</td>
+	<td align="align">Mines only</td>
+	<td>Move assumes no road or VBM</td>
+</tr>
+
+<tr valign="top">
+	<td>23. </td>
+	<td> <font class="red"><u> Building-Wooden</u></font></td>
+	<td align="align">1C7</td>
+	<td align="align">1-3&frac12; Levels</td>
+	<td align="align">+2(+1*)</td>
+	<td align="align">2</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA P</td>
+	<td align="align">NA</td>
+	<td align="align">Z B</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">7/8</td>
+	<td align="align">Mines only</td>
+	<td>IF added +1/level above target</td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>9.7</td>
+	<td>Cactus Hedge</td>
+	<td align="align">SSR</td>
+	<td align="align">Half-Level</td>
+	<td align="align">+1/0 &copy;</td>
+	<td align="align">Y</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">W</td>
+	<td align="align">W</td>
+	<td align="align">W</td>
+	<td align="align">W</td>
+	<td align="align">NA</td>
+	<td align="align">&mdash;</td>
+	<td align="align">&mdash;</td>
+	<td>Wall/hedge hexsides</td>
+</tr>
+
+<tr valign="top">
+	<td>14.7 </td>
+	<td><font class="red">Cactus Patch</font>*</td>
+	<td align="align">SSR</td>
+	<td align="align">&#9608; Half Level</td>
+	<td align="align">+1</td>
+	<td align="align">3 R</td>
+	<td align="align">3 R</td>
+	<td align="align">3 R</td>
+	<td align="align">9 R</td>
+	<td align="align">9 R</td>
+	<td align="align">3 R</td>
+	<td align="align">3 R</td>
+	<td align="align">12 R</td>
+	<td align="align">12/10</td>
+	<td align="align">Yes f</td>
+	<td>"Ex-orchard" hexes; Always in season</td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>11. </td>
+	<td>Cliff</td>
+	<td align="align">2W5/2V4</td>
+	<td align="align">&mdash;</td>
+	<td align="align">-2/NA*</td>
+	<td align="align">CLIMB</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">&mdash;</td>
+	<td align="align">&mdash;</td>
+	<td>vs climber; otherwise DOT</td>
+</tr>
+
+<tr valign="top">
+	<td>17. </td>
+	<td>Crag (&half;)</td>
+	<td align="align">15X9</td>
+	<td align="align">&#9608; Hindrance</td>
+	<td align="align">+1</td>
+	<td align="align">2</td>
+	<td align="align">4 C</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">&mdash;</td>
+	<td align="align">Wire only</td>
+	<td></td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>FB2.</td>
+	<td><font class="red">Debris</font></td>
+	<td align="align">Counter</td>
+	<td align="align">&#9608; Half-Level</td>
+	<td align="align">+1*</td>
+	<td align="align">2</td>
+	<td align="align">2</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">&frac14; B1</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">&mdash;</td>
+	<td align="align">Wire only</td>
+	<td>* <i>[EXC: FB2.63]</i></td>
+</tr>
+
+<tr valign="top">
+	<td>25.</td>
+	<td>Fire / Blaze </td>
+	<td align="align">Counter</td>
+	<td align="align">&#9608; Smoke</td>
+	<td align="align">DOT*</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">&mdash;</td>
+	<td align="align">&mdash;</td>
+	<td>+3 for Smoke; +2 if Burning Wreck</td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>27.</td>
+	<td> <u>Foxhole</u></td>
+	<td align="align">Counter</td>
+	<td align="align">&mdash;</td>
+	<td align="align">+2/+4 &copy;</td>
+	<td align="align">COT*</td>
+	<td align="align">1+COT</td>
+	<td align="align">1+COT [NA]</td>
+	<td align="align">2+COT [NA]</td>
+	<td align="align">2+COT [NA]</td>
+	<td align="align">COT [B]</td>
+	<td align="align">COT [NA]</td>
+	<td align="align">4+COT [NA]</td>
+	<td align="align">&mdash;</td>
+	<td align="align">&mdash;</td>
+	<td>1 MF enter/exit beneath</td>
+</tr>
+
+<tr valign="top">
+	<td>15. </td>
+	<td> <font class="red">Grain (&half;)</font></td>
+	<td align="align">3K9</td>
+	<td align="align">Hindrance*</td>
+	<td align="align">0</td>
+	<td align="align">1&frac12;</td>
+	<td align="align">1&frac12;</td>
+	<td align="align">1&frac12;</td>
+	<td align="align">4</td>
+	<td align="align">4</td>
+	<td align="align">1</td>
+	<td align="align">1</td>
+	<td align="align">5</td>
+	<td align="align">10/6</td>
+	<td align="align">&mdash;</td>
+	<td>June-Sept Only; MF/MP Apr-Sept</td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>18. </td>
+	<td> Graveyard</td>
+	<td align="align">12W4</td>
+	<td align="align">&#9608; Hindrance</td>
+	<td align="align">+1</td>
+	<td align="align">1</td>
+	<td align="align">2 C</td>
+	<td align="align">NA [1]</td>
+	<td align="align">4 [1]</td>
+	<td align="align">NA [1]</td>
+	<td align="align">Z B [1]</td>
+	<td align="align">NA [1]</td>
+	<td align="align">NA [1]</td>
+	<td align="align">&mdash;</td>
+	<td align="align">Yes</td>
+	<td>[via Grave road hexside only]</td>
+</tr>
+
+<tr valign="top">
+	<td>19. </td>
+	<td> Gully</td>
+	<td align="align">5Y3</td>
+	<td align="align">Depression</td>
+	<td align="align">DOT</td>
+	<td align="align">2*</td>
+	<td align="align">2*</td>
+	<td align="align">ALL</td>
+	<td align="align">4+COT</td>
+	<td align="align">4+COT</td>
+	<td align="align">2+COT</td>
+	<td align="align">3+COT</td>
+	<td align="align">6+COT BB</td>
+	<td align="align">&mdash;</td>
+	<td align="align">Yes</td>
+	<td>+COT if not Open Ground</td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>9. </td>
+	<td>Hedge</td>
+	<td align="align">2T1/2U2</td>
+	<td align="align">Half-Level</td>
+	<td align="align">+1/0 &copy;</td>
+	<td align="align">1+COT</td>
+	<td align="align">1+COT</td>
+	<td align="align">NA</td>
+	<td align="align">NA P</td>
+	<td align="align">3+COT B</td>
+	<td align="align">1+COT</td>
+	<td align="align">2+COT B</td>
+	<td align="align">NA</td>
+	<td align="align">&mdash;</td>
+	<td align="align">&mdash;</td>
+	<td></td>
+</tr>
+
+<tr valign="top">
+	<td>9.6</td>
+	<td> Hedge-Hillside</td>
+	<td align="align">25X4-X5 25U3-U4</td>
+	<td align="align">Half-Level</td>
+	<td align="align">+2 or +1*&copy;<br>/+1 or 0*&copy;</td>
+	<td align="align">W</td>
+	<td align="align">W</td>
+	<td align="align">NA</td>
+	<td align="align">W</td>
+	<td align="align">W</td>
+	<td align="align">W</td>
+	<td align="align">W</td>
+	<td align="align">NA</td>
+	<td align="align">&mdash;</td>
+	<td align="align">&mdash;</td>
+	<td>Wall Advan and TEM NA to lower unit</td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>10. </td>
+	<td> Hill</td>
+	<td align="align">2E8</td>
+	<td align="align">1-4 Levels</td>
+	<td align="align">DOT*</td>
+	<td align="align">DOT h</td>
+	<td align="align">DOT h</td>
+	<td align="align">DOT h</td>
+	<td align="align">DOT H</td>
+	<td align="align">DOT H</td>
+	<td align="align">DOT H</td>
+	<td align="align">DOT H</td>
+	<td align="align">DOT H</td>
+	<td align="align">&mdash;</td>
+	<td align="align">Yes</td>
+	<td>+1 HA TEM if no other TEM</td>
+</tr>
+
+<tr valign="top">
+	<td>Q1. </td>
+	<td> Irrigation Ditch</td>
+	<td align="align">PB FF25</td>
+	<td align="align">&mdash;</td>
+	<td align="align">1*</td>
+	<td align="align">COT**</td>
+	<td align="align">1+COT</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">2+COT B BB</td>
+	<td align="align">3+COT Be BB</td>
+	<td align="align">NA</td>
+	<td align="align">&mdash;</td>
+	<td align="align">Yes</td>
+	<td>* Infantry only; ** 1+COT FFMO NA</td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>16. </td>
+	<td> <font class="red">Marsh</font> [Mudflat] (&half;)</td>
+	<td align="align">7G2</td>
+	<td align="align">Hindrance</td>
+	<td align="align">0*</td>
+	<td align="align">ALL@ [2]</td>
+	<td align="align">ALL C[2]</td>
+	<td align="align">NA</td>
+	<td align="align">NA [P]</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">&mdash;</td>
+	<td align="align">No</td>
+	<td>HE FP halved; [Mudflat only]</td>
+</tr>
+
+<tr valign="top">
+	<td>28. </td>
+	<td> Minefield</td>
+	<td align="align">Recorded</td>
+	<td align="align">&mdash;</td>
+	<td align="align">DOT*</td>
+	<td align="align">COT</td>
+	<td align="align">COT</td>
+	<td align="align">COT</td>
+	<td align="align">COT</td>
+	<td align="align">COT</td>
+	<td align="align">COT</td>
+	<td align="align">COT</td>
+	<td align="align">COT</td>
+	<td align="align">&mdash;</td>
+	<td align="align">&mdash;</td>
+	<td>TEM NA to mine attack</td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>14.8 </td>
+	<td><font class="red">Olive Grove</font>*</td>
+	<td align="align">SSR</td>
+	<td align="align">&#9608; Hindrance</td>
+	<td align="align">+1</td>
+	<td align="align">2 R</td>
+	<td align="align">2 R</td>
+	<td align="align">2 R</td>
+	<td align="align">6 R</td>
+	<td align="align">6 R</td>
+	<td align="align">2 R</td>
+	<td align="align">2 R</td>
+	<td align="align">8 R</td>
+	<td align="align">11/9</td>
+	<td align="align">Yes f</td>
+	<td>"Ex-orchard" hexes; Always in season</td>
+</tr>
+
+<tr valign="top">
+	<td>1. </td>
+	<td>Open Ground</td>
+	<td class="align">1B1</td>
+	<td align="align">&mdash;</td>
+	<td align="align">FFMO: -1*</td>
+	<td align="align">1</td>
+	<td align="align">1</td>
+	<td align="align">1</td>
+	<td align="align">3</td>
+	<td align="align">3</td>
+	<td align="align">1</td>
+	<td align="align">1</td>
+	<td align="align">4</td>
+	<td align="align">&mdash;</td>
+	<td align="align">Yes</td>
+	<td>NA if Height Advantage applies</td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>14. </td>
+	<td> <font class="red">Orchard</font></td>
+	<td align="align">6F5</td>
+	<td align="align">&#9608; Level-One* or Hindrance**</td>
+	<td align="align">0</td>
+	<td align="align">1</td>
+	<td align="align">1</td>
+	<td align="align">1</td>
+	<td align="align">3 R</td>
+	<td align="align">3 R</td>
+	<td align="align">1 R</td>
+	<td align="align">1 R</td>
+	<td align="align">4 R</td>
+	<td align="align">11/9</td>
+	<td align="align">Yes</td>
+	<td>*To higher LOS only in Apr-Oct<br>**Max. Hindrance +1 with 2 Level advantage</td>
+</tr>
+
+<tr valign="top">
+	<td>FB5.12 </td>
+	<td> <font class="red">Orchard-Dense</font></td>
+	<td align="align">FB EE37</td>
+	<td align="align">&#9608; Level-One</td>
+	<td align="align">1</td>
+	<td align="align">2</td>
+	<td align="align">2</td>
+	<td align="align">2</td>
+	<td align="align">6 R</td>
+	<td align="align">6 R</td>
+	<td align="align">2 R</td>
+	<td align="align">2 R</td>
+	<td align="align">8 R</td>
+	<td align="align">11/9</td>
+	<td align="align">Yes</td>
+	<td> </td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>30. </td>
+	<td><u>Pillbox</u></td>
+	<td align="align">Counter</td>
+	<td align="align">&mdash;</td>
+	<td align="align">LOS*</td>
+	<td align="align">COT**</td>
+	<td align="align">COT</td>
+	<td align="align">COT</td>
+	<td align="align">COT</td>
+	<td align="align">COT</td>
+	<td align="align">COT</td>
+	<td align="align">COT</td>
+	<td align="align">COT</td>
+	<td align="align">&mdash;</td>
+	<td align="align">&mdash;</td>
+	<td>*Based on type & LOS<br>**costs 1 MF extra to enter/exit beneath</td>
+</tr>
+
+<tr valign="top">
+	<td>36. </td>
+	<td> Prepared Fire Zone <br> <font class="red">PFZ Vineyard</font> <br> PFZ Open Ground </td>
+	<td align="align"> <br> Counter <br> Counter </td>
+	<td align="align"> <br> &#9608; Hindrance <br> &mdash; </td>
+	<td align="align"> <br> 0 <br> FFMO: -1* </td>
+	<td align="align"> <br> 2 R <br> 1 </td>
+	<td align="align"> <br> 2 R <br> 1 </td>
+	<td align="align"> <br> 2 R <br> 1 </td>
+	<td align="align"> <br> 4 R <br> 3 </td>
+	<td align="align"> <br> 4 B R <br> 3 </td>
+	<td align="align"> <br> 2 B R <br> 1 </td>
+	<td align="align"> <br> 2 B R <br> 1 </td>
+	<td align="align"> <br> 6 B R <br> 4 </td>
+	<td align="align"> <br> 9/6 <br> &mdash; </td>
+	<td> <br> Yes f <br> Yes </td>
+	<td> NA if Height Advantage applies </td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>32.</td>
+	<td> Railroads-GLRR </td>
+	<td align="align">Overlays</td>
+	<td align="align">&mdash;</td>
+	<td align="align">FFMO: -1*</td>
+	<td align="align">1 [DOT]</td>
+	<td align="align">1 [1+COT]</td>
+	<td align="align">2 [1+COT]</td>
+	<td align="align">2 [1+COT]</td>
+	<td align="align">3 [2+COT]</td>
+	<td align="align">2 [1+COT]</td>
+	<td align="align">2 [1+COT]</td>
+	<td align="align">5 [5+COT]</td>
+	<td align="align">&mdash;</td>
+	<td align="align">No Entrench</td>
+	<td>If Height-Advantage/Crest-Status are NA</td>
+</tr>
+
+<tr valign="top">
+	<td>32.</td>
+	<td>Railroads-EmRR (D)</td>
+	<td align="align">Overlays</td>
+	<td align="align">Half Level</td>
+	<td align="align">FFMO: -1*</td>
+	<td align="align">1 [DOT]</td>
+	<td align="align">1 [1+COT]</td>
+	<td align="align">2 [1+COT]</td>
+	<td align="align">2 L [2+COT]</td>
+	<td align="align">3 L [3+COT]</td>
+	<td align="align">2 L [2+COT]</td>
+	<td align="align">2 L [2+COT]</td>
+	<td align="align">5 L [6+COT]</td>
+	<td align="align">&mdash;</td>
+	<td align="align">No Entrench</td>
+	<td>If Height-Advantage/Crest-Status are NA</td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>32. </td>
+	<td> Railroads-ElRR (D O)</td>
+	<td align="align">Overlays</td>
+	<td align="align">Level-One</td>
+	<td align="align">FFMO: -1*</td>
+	<td align="align">1 [h]</td>
+	<td align="align">1 [h1]</td>
+	<td align="align">2 [h1]</td>
+	<td align="align">2 L [NA]</td>
+	<td align="align">3 L [NA]</td>
+	<td align="align">2 L [5+COT B]</td>
+	<td align="align">2 L [5+COT B1]</td>
+	<td align="align">5 L [NA]</td>
+	<td align="align">&mdash;</td>
+	<td align="align">No Entrench</td>
+	<td>If Height-Advantage/Crest-Status are NA</td>
+</tr>
+
+<tr valign="top">
+	<td>32. </td>
+	<td>Railroads-SuRR (D S)</td>
+	<td align="align">Overlays</td>
+	<td align="align">Depression</td>
+	<td align="align">FFMO: -1*</td>
+	<td align="align">1 [1+COT]</td>
+	<td align="align">1 [2+COT]</td>
+	<td align="align">2 [NA]</td>
+	<td align="align">2 [NA]</td>
+	<td align="align">3 [NA]</td>
+	<td align="align">2 [NA]</td>
+	<td align="align">2 [NA]</td>
+	<td align="align">5 [NA]</td>
+	<td align="align">&mdash;</td>
+	<td align="align">No Entrench</td>
+	<td>If Height-Advantage/Crest-Status are NA</td>
+</tr>
+</table>
+
+<br>
+
+<table width="100%" numcols="3" cellborder="0" cellpadding="1" bgcolor="#F0F0F0" style="border:1 solid black; font-size:80%;">
+<tr valign="top">
+	<td width="30%"><font class="red">Terrain listed in red is Concealment Terrain</font></td>
+	<td width="30%"><b>C:</b> Cavalry may not charge</td>
+	<td width="30%"><b>O:</b> One-Lane Bridge rules (6.4-.431) apply <i>[EXC: VCA no restricted]</i> when crossing RR hexside</td>
+</tr>
+
+<tr valign="top">
+	<td><b><u>Terrain shown underlined confers -1 Rally DRM.</u></b></td>
+	<td><b>COT:</b> Cost of Terrain</td>
+	<td><b>p:</b> Paved Road rules apply unless noted otherwise</td>
+</tr>
+
+<tr valign="top">
+	<td><b>&dagger;:</b> Indirect Fire TEM is listed following a "/" only if different from Direct Fire TEM</td>
+	<td><b>D:</b> All MP penalties for entering a hex containing a wreck/vehicle or changing VCA are doubled</td>
+	<td><b>P:</b> May be Pushed</td>
+</tr valign="top">
+
+<tr>
+	<td><b><font class="splat">*,**,***</font>:</b> See Notes Column</td>
+	<td><b>DOT:</b> Dependent on Other Terrain in hex</td>
+	<td><b>Pv:</b> If Paved</td>
+</tr>
+
+<tr valign="top">
+	<td><b>&#9608;:</b> Whole hex affects LOS; not the terrain depiction (Inherent Terrain; B.6)</td>
+	<td><b>f:</b> +2 DRM for Entrenching Attempt on Desert Board (F.1) unless Sand is present; F.1B</td>
+	<td><b>R:</b> or per road cost if through Road/Runway, or track cost if through track, hexside</td>
+</tr>
+
+<tr valign="top">
+	<td><b>@:</b> May not enter during APh</td>
+	<td><b>FFMO:</b> -1 DRM vs Moving Infantry in Open Ground</td>
+	<td><b>S:</b> Sunken Lane rules apply (B4.43)</td>
+</tr>
+
+<tr valign="top">
+	<td><b>&diams;:</b> Deep Stream: Infantry must become CX; Motorcycles may not enter</td>
+	<td><b>h:</b> MF cost of each full level higher elevation entered is doubled (i.e., 2 &times; COT) <i>[EXC: changing levels within a building costs 1 MF]</i></td>
+	<td><b>W:</b> Entry as per wall/hedge</td>
+</tr>
+
+<tr valign="top">
+	<td><b>&copy;:</b> Not cumulative with terrain in same hex <i>[EXC: LOS Hindrance DRM]</i></td>
+	<td><b>h1:</b> 2 x [1+COT]</td>
+	<td><b>X:</b> Requires Wreck Check dr</td>
+</tr>
+
+<tr valign="top">
+	<td><b>B:</b> Requires Bog DR to enter/change VCA within </td>
+	<td><b>H:</b> Add 4 MP for each full level higher elevation entered <i>[EXC: Via road add 2 MP]</i> </td>
+	<td><b>Y:</b> Crossable only via Minimum Move, Low Crawl, or Advance vs Difficult Terrain</td>
+</tr>
+
+<tr valign="top">
+	<td><b>Be:</b> Requires Bog DR to enter </td>
+	<td><b>L:</b> +1 MP if entering a half-level higher elevation</td>
+	<td><b>Z:</b> Half of MP allotment</td>
+</tr>
+
+<tr valign="top">
+	<td><b>BB:</b> Requires Bog DR to exit via non-depression hexside</td>
+	<td><b>M:</b> Minimum Move required</td>
+	<td><b>z:</b> One-third of MP allotment</td>
+</tr>
+
+<tr valign="top">
+	<td><b>B1:</b> Requires Bog Check with +1 DRM to enter</td>
+	<td><b>NA:</b> Not allowed</td>
+	<td><b>&half;</b> Half-level hindrance per Chapter P note 6</td>
+</tr>
+
+</table>
+
+<!-- ************************************************************************************ -->
+
+<p style="page-break-after:always;"></p>
+
+&nbsp;
+
+<table width="100%" numrows="1" numcols="2">
+	<tr>
+		<td style="text-align:left; font-size:120%; font-weight:bold">
+			B. TERRAIN CHART
+		</td>
+</table>
+
+<table width="100%" numcols="16" cellborder="0" cellpadding="1" bgcolor="#F0F0F0" style="border:1 solid black; font-size:80%; border-collapse:collapse;">
+<tr valign="bottom">
+	<th align="left" width="2%">Rule#</th>
+	<th align="left" width="8%">Terrain</th>
+	<th align="left" width="5%">Example</th>
+	<th align="left" width="5%">LOS Obstacle/<br>Hindrance</th>
+	<th align="left" width="5%">TEM/<br>Indirect&dagger;</th>
+	<th align="left" width="5%">Infantry</th>
+	<th align="left" width="5%">Cavalry</th>
+	<th align="left" width="5%">Horse Drawn</th>
+	<th align="left" width="5%">Motorcycle</th>
+	<th align="left" width="5%">Armored Car</th>
+	<th align="left" width="5%">Fully Tracked</th>
+	<th align="left" width="5%">Halftrack</th>
+	<th align="left" width="5%">Truck</th>
+	<th align="left" width="5%">Kindle #/ Spread #</th>
+	<th align="left" width="7%">Fortifiable</th>
+	<th align="left" width="20%">Notes</th>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>3. </td>
+	<td>Road</td>
+	<td align="align">1Y10/1Z8</td>
+	<td align="align">&mdash;</td>
+	<td align="align">DOT*</td>
+	<td align="align">1</td>
+	<td align="align">1</td>
+	<td align="align">1</td>
+	<td align="align">&frac12;</td>
+	<td align="align">&frac12; [BU:1]</td>
+	<td align="align">&frac12; [BU:1]</td>
+	<td align="align">&frac12; [BU:1]</td>
+	<td align="align">&frac12; [BU:1]</td>
+	<td align="align">&mdash;</td>
+	<td align="align">Pv No Ent/HIP Mines</td>
+	<td>FFMO if entered at road rate</td>
+</tr>
+
+<tr valign="top">
+	<td>5. </td>
+	<td>Road-Elevated</td>
+	<td align="align">13L5</td>
+	<td align="align">Depression</td>
+	<td align="align">FFMO: -1*</td>
+	<td align="align">2 R</td>
+	<td align="align">2 R</td>
+	<td align="align">NA R D</td>
+	<td align="align">6 X R P</td>
+	<td align="align">NA R D</td>
+	<td align="align">5 R D</td>
+	<td align="align">5 R D</td>
+	<td align="align">NA R D</td>
+	<td align="align">&mdash;</td>
+	<td align="align">No Entrench</td>
+	<td>If Height Advantage NA</td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>4. </td>
+	<td> Road-Sunken </td>
+	<td align="align">14T3</td>
+	<td align="align">Depression</td>
+	<td align="align">FFMO: -1*</td>
+	<td align="align">2 R</td>
+	<td align="align">2 R</td>
+	<td align="align">NA R D</td>
+	<td align="align">NA R</td>
+	<td align="align">NA R D</td>
+	<td align="align">NA R D</td>
+	<td align="align">NA R D</td>
+	<td align="align">NA R D</td>
+	<td align="align">&mdash;</td>
+	<td align="align">No Entrench</td>
+	<td>vs unit without Crest status</td>
+</tr>
+
+<tr valign="top">
+	<td>29. </td>
+	<td>Roadblock</td>
+	<td align="align">Counter</td>
+	<td align="align">Half Level</td>
+	<td align="align">+2/+1</td>
+	<td align="align">1+COT</td>
+	<td align="align">1+COT</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">&mdash;</td>
+	<td align="align">&mdash;</td>
+	<td>Connects to adjacent bldg/woods</td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>24. </td>
+	<td> <font class="red">Rubble</font></td>
+	<td align="align">Counter</td>
+	<td align="align">&#9608; Half Level</td>
+	<td align="align">+2 or +3*</td>
+	<td align="align">3</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA P</td>
+	<td align="align">NA</td>
+	<td align="align">Z B</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">*</td>
+	<td align="align">No</td>
+	<td>Same as Wood or Stone Building</td>
+</tr>
+
+<tr valign="top">
+	<td>7. </td>
+	<td> Runway</td>
+	<td align="align">14M6</td>
+	<td align="align">&mdash;</td>
+	<td align="align">-1*</td>
+	<td align="align">1 R</td>
+	<td align="align">1 R</td>
+	<td align="align">1 R</td>
+	<td align="align">3 R</td>
+	<td align="align">3 R</td>
+	<td align="align">1 R</td>
+	<td align="align">1 R</td>
+	<td align="align">4 R</td>
+	<td align="align">&mdash;</td>
+	<td align="align">Wire & Roadblock only</td>
+	<td>In any fire phase; NA vs armor</td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>8. </td>
+	<td> Sewer</td>
+	<td align="align">1D5/1E4</td>
+	<td align="align">&mdash;*</td>
+	<td align="align">-2/NA</td>
+	<td align="align">ALL@</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">&mdash;</td>
+	<td align="align">No</td>
+	<td>LOS to adjacent sewer hex only</td>
+</tr>
+
+<tr valign="top">
+	<td>2. </td>
+	<td>Shellholes</td>
+	<td align="align">2U6</td>
+	<td align="align">&mdash;</td>
+	<td align="align">+1&copy;*</td>
+	<td align="align">1 or 2*</td>
+	<td align="align">2</td>
+	<td align="align">2</td>
+	<td align="align">2+COT X</td>
+	<td align="align">2+COT</td>
+	<td align="align">COT</td>
+	<td align="align">COT</td>
+	<td align="align">4+COT</td>
+	<td align="align">&mdash;</td>
+	<td align="align">Yes</td>
+	<td>Treat as OG if entered at 1 MF</td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>FB12. </td>
+	<td><font class="red"> Storage Tanks </font></td>
+	<td align="align">FB G5</td>
+	<td align="align">1&half;</td>
+	<td align="align">+1</td>
+	<td align="align">1</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">&mdash;</td>
+	<td align="align">&mdash;</td>
+	<td>Not considered a Building; VBM allowed</td>
+</tr>
+
+<tr valign="top">
+	<td>20. </td>
+	<td>Stream</td>
+	<td align="align">13N6</td>
+	<td align="align">Depression</td>
+	<td align="align">DOT</td>
+	<td align="align">*2/3/4 &diams;</td>
+	<td align="align">*2/3/4</td>
+	<td align="align">ALL BB</td>
+	<td align="align">4+COT X &diams;</td>
+	<td align="align">4+COT BB</td>
+	<td align="align">2+COT BB</td>
+	<td align="align">3+COT BB</td>
+	<td align="align">6+COT BB</td>
+	<td align="align">&mdash;</td>
+	<td align="align">Mine/Wire only</td>
+	<td>Dry/Shallow/Deep</td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>33.</td>
+	<td>Stream-<font class="red">Brush</font></td>
+	<td align="align">StMM11</td>
+	<td align="align">Half-Level [&mdash;]</td>
+	<td align="align">0* [FFMO: -1]</td>
+	<td align="align">4/5/6 <br> [2/3/4]&diams;</td>
+	<td align="align">4/5/6 <br> [2/3/4]</td>
+	<td align="align">M [ALL]</td>
+	<td align="align">11 &diams; <br> [7]</td>
+	<td align="align">11 <br> [7]</td>
+	<td align="align">5 <br> [3]</td>
+	<td align="align">6 <br> [4]</td>
+	<td align="align">16 <br> [10]</td>
+	<td align="align">9/6</td>
+	<td align="align">Mine/Wire only</td>
+	<td>Vs unit without crest status [if IN stream (and LOS crosses stream hexside)]</td>
+</tr>
+
+<tr valign="top">
+	<td>33.</td>
+	<td>Stream-<font class="red">Orchard</font></td>
+	<td align="align">StLL14</td>
+	<td align="align">Level-One* or Hindrance** [&mdash;]</td>
+	<td align="align">0<font class="splat">***</font> [FFMO: -1]</td>
+	<td align="align">3/4/5 <br> [2/3/4]&diams;</td>
+	<td align="align">3/4/5 <br> [2/3/4]</td>
+	<td align="align">M <br> [ALL]</td>
+	<td align="align">10 &diams; <br> [7]</td>
+	<td align="align">10 <br> [7]</td>
+	<td align="align">4 <br> [3]</td>
+	<td align="align">5 <br> [4]</td>
+	<td align="align">14 <br> [10]</td>
+	<td align="align">11/9</td>
+	<td align="align">Mine/Wire only</td>
+	<td>*To higher LOS only in Apr-Oct; ** Hindrance +1 with 2 level advantage; <font class="splat">***</font>Vs unit without crest status [if IN stream (and LOS crosses stream hexside)]</td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>33. </td>
+	<td> <u>Stream-<font class="red">Woods</font></u></td>
+	<td align="align">47F6</td>
+	<td align="align">Level-One [&mdash;]</td>
+	<td align="align">+1/-1* [FFMO: -1]</td>
+	<td align="align">4/5/6 <br> [2/3/4]&diams;</td>
+	<td align="align">4/5/6 <br> [2/3/4]</td>
+	<td align="align">M <br> [ALL]</td>
+	<td align="align">NA P &diams; <br> [7]</td>
+	<td align="align">M <br> [7]</td>
+	<td align="align">M B/Z & 3 <br> [3]</td>
+	<td align="align">M <br> [4]</td>
+	<td align="align">M <br> [10]</td>
+	<td align="align">9/7</td>
+	<td align="align">Mine/Wire only</td>
+	<td>Vs unit without crest status [if IN stream (and LOS crosses stream hexside)]</td>
+</tr>
+
+<tr valign="top">
+	<td>FB10. </td>
+	<td>Tennis Courts</td>
+	<td class="align">1B1</td>
+	<td align="align">&mdash;</td>
+	<td align="align">*</td>
+	<td align="align">1</td>
+	<td align="align">1</td>
+	<td align="align">1</td>
+	<td align="align">3</td>
+	<td align="align">3</td>
+	<td align="align">1</td>
+	<td align="align">1</td>
+	<td align="align">4</td>
+	<td align="align">&mdash;</td>
+	<td align="align">Yes</td>
+	<td>Treat as Open Ground</td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>34. </td>
+	<td> Tower hex [<u>Tower Location</u>]</td>
+	<td align="align">PB C9</td>
+	<td align="align">SSR</td>
+	<td align="align">DOT [0*]</td>
+	<td align="align">1+COT [1 per level]</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA P</td>
+	<td align="align">NA</td>
+	<td align="align">Z B</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">DOT [7/8]</td>
+	<td align="align">Mines only [No]</td>
+	<td>If Height Advantage NA</td>
+</tr>
+
+<tr valign="top">
+	<td>27.</td>
+	<td> <u>Trench</u></td>
+	<td align="align">Counter</td>
+	<td align="align">&mdash;</td>
+	<td align="align">+2/+4 &copy;</td>
+	<td align="align">COT*</td>
+	<td align="align">1+COT</td>
+	<td align="align">1+COT [NA]</td>
+	<td align="align">2+COT [NA]</td>
+	<td align="align">2+COT [NA]</td>
+	<td align="align">COT [B]</td>
+	<td align="align">COT [NA]</td>
+	<td align="align">4+COT [NA]</td>
+	<td align="align">&mdash;</td>
+	<td align="align">&mdash;</td>
+	<td>1 MF enter/exit beneath</td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>22. </td>
+	<td> Valley</td>
+	<td align="align">24P8</td>
+	<td align="align">Level -1</td>
+	<td align="align">DOT</td>
+	<td align="align">DOT</td>
+	<td align="align">DOT</td>
+	<td align="align">DOT</td>
+	<td align="align">DOT</td>
+	<td align="align">DOT</td>
+	<td align="align">DOT</td>
+	<td align="align">DOT</td>
+	<td align="align">DOT</td>
+	<td align="align">&mdash;</td>
+	<td align="align">Yes</td>
+	<td>Note h and H when moving higher</td>
+</tr>
+
+<tr valign="top">
+	<td>12.7 </td>
+	<td> <font class="red">Vineyard</font></td>
+	<td align="align">SSR</td>
+	<td align="align">&#9608; Hindrance</td>
+	<td align="align">0</td>
+	<td align="align">2</td>
+	<td align="align">2</td>
+	<td align="align">2</td>
+	<td align="align">4</td>
+	<td align="align">4 B</td>
+	<td align="align">2 B</td>
+	<td align="align">2 B</td>
+	<td align="align">6 B</td>
+	<td align="align">&mdash;</td>
+	<td align="align">Yes</td>
+	<td>Parachute landing requires NMC (E9.42); see Z.PBr15.1</td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>9. </td>
+	<td> Wall</td>
+	<td align="align">2H1/2I1</td>
+	<td align="align">Half-Level</td>
+	<td align="align">+2/+1 &copy;</td>
+	<td align="align">1+COT</td>
+	<td align="align">1+COT</td>
+	<td align="align">NA</td>
+	<td align="align">NA P</td>
+	<td align="align">NA</td>
+	<td align="align">1+COT</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">&mdash;</td>
+	<td align="align">&mdash;</td>
+	<td></td>
+</tr>
+
+<tr valign="top">
+	<td>9.6</td>
+	<td> Wall-Hillside </td>
+	<td align="align">25X4-X5 25U3-U4</td>
+	<td align="align">Half-Level</td>
+	<td align="align">+2 or +1*&copy;<br>/+1 or 0*&copy;</td>
+	<td align="align">W</td>
+	<td align="align">W</td>
+	<td align="align">NA</td>
+	<td align="align">W</td>
+	<td align="align">W</td>
+	<td align="align">W</td>
+	<td align="align">W</td>
+	<td align="align">NA</td>
+	<td align="align">&mdash;</td>
+	<td align="align">&mdash;</td>
+	<td>Wall Advan and TEM NA to lower unit</td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>21. </td>
+	<td> Water Obstacle</td>
+	<td align="align">7E2</td>
+	<td align="align">Level -1</td>
+	<td align="align">FFMO: -1*</td>
+	<td align="align">ALL*@</td>
+	<td align="align">ALL*</td>
+	<td align="align">ALL*</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">&mdash;</td>
+	<td align="align">No</td>
+	<td>Only if Fordable (B20.8)</td>
+</tr>
+
+<tr valign="top">
+	<td>26. </td>
+	<td> Wire</td>
+	<td align="align">Counter</td>
+	<td align="align">&mdash;</td>
+	<td align="align">DOT</td>
+	<td align="align">COT</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">NA</td>
+	<td align="align">4+COT B</td>
+	<td align="align">2+COT B</td>
+	<td align="align">4+COT B</td>
+	<td align="align">4+COT B</td>
+	<td align="align">&mdash;</td>
+	<td align="align">&mdash;</td>
+	<td>Exit only in MPh/RtPh</td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>13. </td>
+	<td> <font class="red"><u>Woods</u></font></td>
+	<td align="align">1C9</td>
+	<td align="align">Level-One</td>
+	<td align="align">+1/-1</td>
+	<td align="align">2 R</td>
+	<td align="align">4 C R</td>
+	<td align="align">ALL B R</td>
+	<td align="align">NA P R</td>
+	<td align="align">ALL B R</td>
+	<td align="align">ALL B*/Z D R</td>
+	<td align="align">ALL B R</td>
+	<td align="align">ALL B R</td>
+	<td align="align">9/7</td>
+	<td align="align">Yes</td>
+	<td>If no road, VBM, or TB</td>
+</tr>
+
+<tr valign="top">
+	<td>35. </td>
+	<td> <font class="red"><u>Woods-Light</u></font></td>
+	<td align="align">SSR</td>
+	<td align="align">Level-One* or +2 Hindrance</td>
+	<td align="align">+1/-1</td>
+	<td align="align">2 R</td>
+	<td align="align">4 C R</td>
+	<td align="align">ALL B R</td>
+	<td align="align">NA P R</td>
+	<td align="align">ALL B R</td>
+	<td align="align">ALL B**/z D R</td>
+	<td align="align">ALL B**/z D R</td>
+	<td align="align">ALL B R</td>
+	<td align="align">9/7</td>
+	<td align="align">Yes</td>
+	<td>* To higher LOS only <br>** If no road, VBM, or TB </td>
+</tr>
+
+<tr valign="top" class="blue">
+	<td>13.8 </td>
+	<td> <font class="red"><u>Woods-Pine</u></font></td>
+	<td align="align">SSR</td>
+	<td align="align">Level-Two</td>
+	<td align="align">+1/-1</td>
+	<td align="align">1&half; R</td>
+	<td align="align">3 C R</td>
+	<td align="align">ALL B R</td>
+	<td align="align">NA P R</td>
+	<td align="align">ALL B R</td>
+	<td align="align">ALL B*/Z D R</td>
+	<td align="align">ALL B R</td>
+	<td align="align">ALL B R</td>
+	<td align="align">9/7</td>
+	<td align="align">Yes</td>
+	<td>If no road, VBM, or TB</td>
+</tr>
+
+<tr valign="top">
+	<td>D10. </td>
+	<td> Wreck (&half;)</td>
+	<td align="align">Counter</td>
+	<td align="align">&#9608; Hindrance</td>
+	<td align="align">+1 &copy;</td>
+	<td align="align">COT</td>
+	<td align="align">COT</td>
+	<td align="align">DOT +1*</td>
+	<td align="align">DOT</td>
+	<td align="align">DOT +1*</td>
+	<td align="align">DOT +1*</td>
+	<td align="align">DOT +1*</td>
+	<td align="align">DOT +1*</td>
+	<td align="align">&mdash;</td>
+	<td align="align">&mdash;</td>
+	<td>Per Veh./Wreck; +2 if enter via road</td>
+</tr>
+
+</table>
+
+<br>
+<!-- ************************************************************************************ -->
+
+<table width="100%" numcols="3" cellborder="0" cellpadding="1" bgcolor="#F0F0F0" style="border:1 solid black; font-size:80%;">
+<tr valign="top">
+	<td width="30%"><font class="red">Terrain listed in red is Concealment Terrain</font></td>
+	<td width="30%"><b>C:</b> Cavalry may not charge</td>
+	<td width="30%"><b>O:</b> One-Lane Bridge rules (6.4-.431) apply <i>[EXC: VCA no restricted]</i> when crossing RR hexside</td>
+</tr>
+
+<tr valign="top">
+	<td><b><u>Terrain shown underlined confers -1 Rally DRM.</u></b></td>
+	<td><b>COT:</b> Cost of Terrain</td>
+	<td><b>p:</b> Paved Road rules apply unless noted otherwise</td>
+</tr>
+
+<tr valign="top">
+	<td><b>&dagger;:</b> Indirect Fire TEM is listed following a "/" only if different from Direct Fire TEM</td>
+	<td><b>D:</b> All MP penalties for entering a hex containing a wreck/vehicle or changing VCA are doubled</td>
+	<td><b>P:</b> May be Pushed</td>
+</tr valign="top">
+
+<tr>
+	<td><b><font class="splat">*,**,***</font>:</b> See Notes Column</td>
+	<td><b>DOT:</b> Dependent on Other Terrain in hex</td>
+	<td><b>Pv:</b> If Paved</td>
+</tr>
+
+<tr valign="top">
+	<td><b>&#9608;:</b> Whole hex affects LOS; not the terrain depiction (Inherent Terrain; B.6)</td>
+	<td><b>f:</b> +2 DRM for Entrenching Attempt on Desert Board (F.1) unless Sand is present; F.1B</td>
+	<td><b>R:</b> or per road cost if through Road/Runway, or track cost if through track, hexside</td>
+</tr>
+
+<tr valign="top">
+	<td><b>@:</b> May not enter during APh</td>
+	<td><b>FFMO:</b> -1 DRM vs Moving Infantry in Open Ground</td>
+	<td><b>S:</b> Sunken Lane rules apply (B4.43)</td>
+</tr>
+
+<tr valign="top">
+	<td><b>&diams;:</b> Deep Stream: Infantry must become CX; Motorcycles may not enter</td>
+	<td><b>h:</b> MF cost of each full level higher elevation entered is doubled (i.e., 2 &times; COT) <i>[EXC: changing levels within a building costs 1 MF]</i></td>
+	<td><b>W:</b> Entry as per wall/hedge</td>
+</tr>
+
+<tr valign="top">
+	<td><b>&copy;:</b> Not cumulative with terrain in same hex <i>[EXC: LOS Hindrance DRM]</i></td>
+	<td><b>h1:</b> 2 x [1+COT]</td>
+	<td><b>X:</b> Requires Wreck Check dr</td>
+</tr>
+
+<tr valign="top">
+	<td><b>B:</b> Requires Bog DR to enter/change VCA within </td>
+	<td><b>H:</b> Add 4 MP for each full level higher elevation entered <i>[EXC: Via road add 2 MP]</i> </td>
+	<td><b>Y:</b> Crossable only via Minimum Move, Low Crawl, or Advance vs Difficult Terrain</td>
+</tr>
+
+<tr valign="top">
+	<td><b>Be:</b> Requires Bog DR to enter </td>
+	<td><b>L:</b> +1 MP if entering a half-level higher elevation</td>
+	<td><b>Z:</b> Half of MP allotment </td>
+</tr>
+
+<tr valign="top">
+	<td><b>BB:</b> Requires Bog DR to exit via non-depression hexside</td>
+	<td><b>M:</b> Minimum Move required</td>
+	<td><b>z:</b> One-third of MP allotment </td>
+</tr>
+
+<tr valign="top">
+	<td><b>B1:</b> Requires Bog Check with +1 DRM to enter</td>
+	<td><b>NA:</b> Not allowed</td>
+	<td><b>&half;</b> Half-level hindrance per Chapter P note 6</td>
+</tr>
+
+</table>
+
+<p>
+&nbsp;
+
+<!-- ************************************************************************************ -->
+</body>
+</html>

@@ -24,8 +24,8 @@ function createTables($phase, $color) {
       case "C":
         echo "<table class='w3-table-all' >\n";
         echo " <tr class='". $color ."'>\n";
-        echo "   <td colspan='2'><button onclick=\"hidesection('".$tablecontent[2]."')\" class='w3-button'>
-". $tablecontent[1] ." <- Click me!</button></td>\n";
+        echo "   <td colspan='2'><button onclick=\"hidesection('".$tablecontent[2]."')\" class='w3-button'><b>
+". $tablecontent[1] ." <- Click me!</b></button></td>\n";
         echo "   ";
         echo " </tr>\n";
         echo "</table>\n";
@@ -40,6 +40,24 @@ function createTables($phase, $color) {
         echo "</thead>\n";
 
 
+        break;
+      case "NC":
+        echo "<table class='w3-table-all' style='margin-bottom:15px'>\n";
+        echo "<thead>\n";
+        echo " <tr class='". $tablecontent[2] ."'>\n";
+        echo "   <td colspan='2' style='width:10px'><b>". $tablecontent[1] ."</b></td>\n";
+        echo "   ";
+        echo " </tr>\n";
+        echo "</thead>\n";
+        break;
+      case "NB":
+        echo "<table class='w3-table' style='margin-bottom:15px'>\n";
+        echo "<thead>\n";
+        echo " <tr class='". $tablecontent[2] ."'>\n";
+        echo "   <td colspan='2' style='width:10px'></td>\n";
+        echo "   ";
+        echo " </tr>\n";
+        echo "</thead>\n";
         break;
       case "N":
         if (ISSET($tablecontent[2]) AND ISSET($tablecontent[3])) {

@@ -1,0 +1,25 @@
+N;PIN
+O;NA if Cavalry, vehicles, in Water Obstacles, berserk,
+O;Heroic, Aerial, Climbing
+O;FP x ½ [EXC: CC defense]
+O;Fire MG/IFE/Canister as Area Fire
+O;No advance, move
+O;No SW/Gun transfer
+O;No FT/DC/IF
+O;No Multiple ROF
+O;No CA change
+O;+2 To Hit DR Case D
+O;CT AFV CE crew goes BU
+O;OT AFV CE crew remains CE, +2 To Hit DR Case D,
+O;MG/IFE/FT/Canister FP x ½
+O;CE Passengers go BU
+O;AFV Riders Bail Out
+O;No FFMO, FFNAM
+O;Leader may not use leadership rating
+O;No SMC Voluntary Rout
+O;No CC Reaction Fire
+O;CCV reduced by 1
+O;No Tank-Hunter Hero creation
+O;Remove if broken, goes berserk, becomes Battle
+O;Hardened, becomes Heroic
+X;X

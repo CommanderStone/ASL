@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Concealment</title>
+</head>
+
+<!-- ************************************************************************************ -->
+
+<style type="text/css">
+
+@media print2
+{
+	body2
+	{
+		transform: scale(1.0);
+	}
+	table
+	{
+		apage-break-inside: avoid;
+		font-size2: 75%;
+		width: 100%;
+	}
+	img2
+	{
+		height: 75%;
+		width: 75%;
+	}
+}
+
+html, body
+{
+    margin: 0px;
+   	padding: 0px;
+}
+
+table.chart
+{
+	width2: 100%;
+	border: 2pt solid black;
+	border-bottom: 1pt solid black;
+	background-color: white;
+	border-collapse: collapse;
+	font-size: 125%;
+}
+
+tr.chart_row
+{
+	height2: 100px;
+	height: 75px;
+}
+
+tr.chart_datacell
+{
+	height2: 100px;
+	height: 75px;
+	padding: 5px;
+}
+
+td.chart_row_hdr
+{
+	border:solid 1px;
+	padding: 5px;
+}
+
+td.chart_data1
+{
+	border: solid 1px;
+	background: linear-gradient(to right bottom, #FFE7FA 49%, black 49%, #FFE7FA 51%, #FFE7FA 100%);
+	padding: 5px;
+}
+
+td.chart_data2
+{
+	border: solid 1px;
+	background: linear-gradient(to right bottom, white 49%, black 49%, white 51%, white 100%);
+	padding: 5px;
+}
+
+table.notes
+{
+	border: 2pt solid black;
+	border-top: 1pt solid black;
+	border-collapse: collapse;
+	background-color: #F7D2C2;
+	text-align: left;
+	font-size: 60%;
+}
+
+table.searching
+{
+	border: 2pt solid black;
+	border-collapse: collapse;
+	background-color: white;
+	text-align: left;
+}
+
+td.note1
+{
+	min-width: 40px;
+	font-weight: bold;
+	text-align: center;
+	border-bottom: 0.5pt solid #999999;
+	background-color: #FFFFFF;
+}
+
+td.note2
+{
+	width2: 100%;
+	border-bottom: 0.5pt solid #999999;
+	background-color: #FFFFFF;
+	font-size: 98%;
+}
+
+td.note-margin
+{
+	min-width: 0px;
+	border-bottom: 0.5pt solid #999999;
+	background-color: #FFFFFF;
+}
+
+td.search-margin
+{
+	min-width: 10px;
+	background-color: #FFFFFF;
+}
+
+td.search-note1
+{
+	min-width: 20px;
+	background-color: #CAECFF;
+}
+
+td.search-note2
+{
+	min-width: 20px;
+	background-color: #FFFFFF;
+}
+
+</style>
+
+<!-- ************************************************************************************ -->
+
+<body style="background-color:#F7D2C2">
+	<table class="chart" style="font-size:100%;" cellpadding="0" numcols="7" align="center">
+		<col width="300">
+		<col width="175">
+		<col width="175">
+		<col width="175">
+		<col width="175">
+		<col width="175">
+		<col width="175">
+		
+		<tr>
+			<td style="border:solid 1px;"> </td>
+			<td colspan="6" style="text-align:center; font-size:100%; border:solid 1px;">
+				<b> A12.121 CONCEALMENT LOSS/GAIN TABLE &Delta; </b>
+			</td>
+		</tr>
+
+		<tr>
+			<td rowspan="3" style="background: linear-gradient(to right bottom, #ffffff 0%, #ffffff 50%, #000000 52%, #000000 52%, #ffffff 52%, #ffffff 100%);">
+				<table style="border-collapse:collapse;" width="100%">
+					<tr height="100">
+						<td style="vertical-align:top; color:red; font-size:80%;">&nbsp; "?"/HIP <br> &nbsp; IS LOST</td>
+						<td style="vertical-align:bottom; text-align:right; font-size:80%;">"?" IS &nbsp; &nbsp; <br> GAINED &nbsp;</td>
+					</tr>
+				</table>
+			</td>
+			<td colspan="6" style="text-align:center; border:solid 1px;">
+				LOS RANGE FROM NEAREST <font color="red">GOOD ORDER</font> OR UNBROKEN ENEMY GROUND UNIT
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="text-align:center; border:solid 1px;"> &nbsp; &le; 16 &nbsp; </td>
+			<td colspan="2" style="text-align:center; border:solid 1px;"> &nbsp; &ge; 17 &nbsp; </td>
+			<td colspan="2" style="text-align:center; border:solid 1px;"> &nbsp; &infin; (none in LOS) &nbsp; </td>
+		</tr>
+		<tr>
+			<td style="text-align:center; border:solid 1px; font-size:90%; padding:2;">IN <br> CONCEALMENT TERRAIN</td>
+			<td style="text-align:center; border:solid 1px; font-size:90%; padding:2;">NOT IN <br> CONCEALMENT TERRAIN</td>
+			<td style="text-align:center; border:solid 1px; font-size:90%; padding:2;">IN <br> CONCEALMENT TERRAIN</td>
+			<td style="text-align:center; border:solid 1px; font-size:90%; padding:2;">NOT IN <br> CONCEALMENT TERRAIN</td>
+			<td style="text-align:center; border:solid 1px; font-size:90%; padding:2;">IN <br> CONCEALMENT TERRAIN</td>
+			<td style="text-align:center; border:solid 1px; font-size:90%; padding:2;">NOT IN <br> CONCEALMENT TERRAIN</td>
+		</tr>
+		<tr class="chart_row">
+			<td class="chart_row_hdr" style="font-size:80%;">INFANTRY (not manning a Gun) </td>
+			<td class="chart_data1">
+				<table style="border-collapse:collapse;" cellpadding="0" width="100%">
+					<tr class="chart_datacell">
+						<td style="vertical-align:top; color:red; font-weight:bold;">&nbsp; ABCD</td>
+						<td style="vertical-align:bottom; text-align:right; font-weight:bold;">[NA] &nbsp;</td>
+					</tr>
+				</table>
+			</td>
+			<td class="chart_data2">
+				<table style="border-collapse:collapse;" cellpadding="0" width="100%">
+					<tr class="chart_datacell">
+						<td style="vertical-align:top; color:red; font-weight:bold;">&nbsp; ABCD</td>
+						<td style="vertical-align:bottom; text-align:right; font-weight:bold;">[NA] &nbsp;</td>
+					</tr>
+				</table>
+			</td>
+			<td class="chart_data1">
+				<table style="border-collapse:collapse;" cellpadding="0" width="100%">
+					<tr class="chart_datacell">
+						<td style="vertical-align:top; color:red; font-weight:bold;">&nbsp; E</td>
+						<td style="vertical-align:bottom; text-align:right; font-weight:bold;">I &nbsp;</td>
+					</tr>
+				</table>
+			</td>
+			<td class="chart_data2">
+				<table style="border-collapse:collapse;" cellpadding="0" width="100%">
+					<tr class="chart_datacell">
+						<td style="vertical-align:top; color:red; font-weight:bold;">&nbsp; E</td>
+						<td style="vertical-align:bottom; text-align:right; font-weight:bold;">[NA] &nbsp;</td>
+					</tr>
+				</table>
+			</td>
+			<td class="chart_data1">
+				<table style="border-collapse:collapse;" cellpadding="0" width="100%">
+					<tr class="chart_datacell">
+						<td style="vertical-align:top; color:red; font-weight:bold;">&nbsp; F</td>
+						<td style="vertical-align:bottom; text-align:right; font-weight:bold;">J &nbsp;</td>
+					</tr>
+				</table>
+			</td>
+			<td class="chart_data2">
+				<table style="border-collapse:collapse;" cellpadding="0" width="100%">
+					<tr class="chart_datacell">
+						<td style="vertical-align:top; color:red; font-weight:bold;">&nbsp; F</td>
+						<td style="vertical-align:bottom; text-align:right; font-weight:bold;">K &nbsp;</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="chart_row">
+			<td class="chart_row_hdr" style="font-size:80%;">EMPLACED GUN (and manning Infantry) </td>
+			<td class="chart_data1">
+				<table style="border-collapse:collapse;" cellpadding="0" width="100%">
+					<tr class="chart_datacell">
+						<td style="vertical-align:top; color:red; font-weight:bold;">&nbsp; ACDG</td>
+						<td style="vertical-align:bottom; text-align:right; font-weight:bold;">[NA] &nbsp;</td>
+					</tr>
+				</table>
+			</td>
+			<td class="chart_data2">
+				<table style="border-collapse:collapse;" cellpadding="0" width="100%">
+					<tr class="chart_datacell">
+						<td style="vertical-align:top; color:red; font-weight:bold;">&nbsp; ACDG</td>
+						<td style="vertical-align:bottom; text-align:right; font-weight:bold;">[NA] &nbsp;</td>
+					</tr>
+				</table>
+			</td>
+			<td class="chart_data1">
+				<table style="border-collapse:collapse;" cellpadding="0" width="100%">
+					<tr class="chart_datacell">
+						<td style="vertical-align:top; color:red; font-weight:bold;">&nbsp; AG</td>
+						<td style="vertical-align:bottom; text-align:right; font-weight:bold;">[NA] &nbsp;</td>
+					</tr>
+				</table>
+			</td>
+			<td class="chart_data2">
+				<table style="border-collapse:collapse;" cellpadding="0" width="100%">
+					<tr class="chart_datacell">
+						<td style="vertical-align:top; color:red; font-weight:bold;">&nbsp; AG</td>
+						<td style="vertical-align:bottom; text-align:right; font-weight:bold;">[NA] &nbsp;</td>
+					</tr>
+				</table>
+			</td>
+			<td class="chart_data1">
+				<table style="border-collapse:collapse;" cellpadding="0" width="100%">
+					<tr class="chart_datacell">
+						<td style="vertical-align:top; color:red; font-weight:bold;">&nbsp; F</td>
+						<td style="vertical-align:bottom; text-align:right; font-weight:bold;">J &nbsp;</td>
+					</tr>
+				</table>
+			</td>
+			<td class="chart_data2">
+				<table style="border-collapse:collapse;" cellpadding="0" width="100%">
+					<tr class="chart_datacell">
+						<td style="vertical-align:top; color:red; font-weight:bold;">&nbsp; F</td>
+						<td style="vertical-align:bottom; text-align:right; font-weight:bold;">K &nbsp;</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="chart_row">
+			<td class="chart_row_hdr" style="font-size:75%;">
+				VEHICLE (and PRC) / UNEMPLACED GUN (and manning Inf) / CAVALRY / HORSE / BICYCLE
+			</td>
+			<td class="chart_data1">
+				<table style="border-collapse:collapse;" cellpadding="0" width="100%">
+					<tr class="chart_datacell">
+						<td style="vertical-align:top; color:red; font-weight:bold;">&nbsp; ABCD</td>
+						<td style="vertical-align:bottom; text-align:right; font-weight:bold;">[NA] &nbsp;</td>
+					</tr>
+				</table>
+			</td>
+			<td class="chart_data2">
+				<table style="border-collapse:collapse;" cellpadding="0" width="100%">
+					<tr class="chart_datacell">
+						<td style="vertical-align:top; color:red; font-weight:bold;">&nbsp; H</td>
+						<td style="vertical-align:bottom; text-align:right; font-weight:bold;">[NA] &nbsp;</td>
+					</tr>
+				</table>
+			</td>
+			<td class="chart_data1">
+				<table style="border-collapse:collapse;" cellpadding="0" width="100%">
+					<tr class="chart_datacell">
+						<td style="vertical-align:top; color:red; font-weight:bold;">&nbsp; AB</td>
+						<td style="vertical-align:bottom; text-align:right; font-weight:bold;">[NA] &nbsp;</td>
+					</tr>
+				</table>
+			</td>
+			<td class="chart_data2">
+				<table style="border-collapse:collapse;" cellpadding="0" width="100%">
+					<tr class="chart_datacell">
+						<td style="vertical-align:top; color:red; font-weight:bold;">&nbsp; H</td>
+						<td style="vertical-align:bottom; text-align:right; font-weight:bold;">[NA] &nbsp;</td>
+					</tr>
+				</table>
+			</td>
+			<td class="chart_data1">
+				<table style="border-collapse:collapse;" cellpadding="0" width="100%">
+					<tr class="chart_datacell">
+						<td style="vertical-align:top; color:red; font-weight:bold;">&nbsp; F</td>
+						<td style="vertical-align:bottom; text-align:right; font-weight:bold;">J &nbsp;</td>
+					</tr>
+				</table>
+			</td>
+			<td class="chart_data2">
+				<table style="border-collapse:collapse;" cellpadding="0" width="100%">
+					<tr class="chart_datacell">
+						<td style="vertical-align:top; color:red; font-weight:bold;">&nbsp; F</td>
+						<td style="vertical-align:bottom; text-align:right; font-weight:bold;">K &nbsp;</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="chart_row">
+			<td class="chart_row_hdr" style="font-size:80%;">FORTIFICATION (HIP Loss / Gain only) </td>
+			<td class="chart_data1">
+				<table style="border-collapse:collapse;" cellpadding="0" width="100%">
+					<tr class="chart_datacell">
+						<td style="vertical-align:top; color:red; font-weight:bold;">&nbsp; HL</td>
+						<td style="vertical-align:bottom; text-align:right; font-weight:bold;">[NA] &nbsp;</td>
+					</tr>
+				</table>
+			</td>
+			<td class="chart_data2">
+				<table style="border-collapse:collapse;" cellpadding="0" width="100%">
+					<tr class="chart_datacell">
+						<td style="vertical-align:top; color:red; font-weight:bold;">&nbsp; HL</td>
+						<td style="vertical-align:bottom; text-align:right; font-weight:bold;">[NA] &nbsp;</td>
+					</tr>
+				</table>
+			</td>
+			<td class="chart_data1">
+				<table style="border-collapse:collapse;" cellpadding="0" width="100%">
+					<tr class="chart_datacell">
+						<td style="vertical-align:top; color:red; font-weight:bold;">&nbsp; L</td>
+						<td style="vertical-align:bottom; text-align:right; font-weight:bold;">[NA] &nbsp;</td>
+					</tr>
+				</table>
+			</td>
+			<td class="chart_data2">
+				<table style="border-collapse:collapse;" cellpadding="0" width="100%">
+					<tr class="chart_datacell">
+						<td style="vertical-align:top; color:red; font-weight:bold;">&nbsp; HL</td>
+						<td style="vertical-align:bottom; text-align:right; font-weight:bold;">[NA] &nbsp;</td>
+					</tr>
+				</table>
+			</td>
+			<td class="chart_data1">
+				<table style="border-collapse:collapse;" cellpadding="0" width="100%">
+					<tr class="chart_datacell">
+						<td style="vertical-align:top; color:red; font-weight:bold;">&nbsp; L</td>
+						<td style="vertical-align:bottom; text-align:right; font-weight:bold;">[NA] &nbsp;</td>
+					</tr>
+				</table>
+			</td>
+			<td class="chart_data2">
+				<table style="border-collapse:collapse;" cellpadding="0" width="100%">
+					<tr class="chart_datacell">
+						<td style="vertical-align:top; color:red; font-weight:bold;">&nbsp; L</td>
+						<td style="vertical-align:bottom; text-align:right; font-weight:bold;">[NA] &nbsp;</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	
+	<table class="notes" cellpadding="0" numcols="4">
+		<tr>
+			<td class="note-margin"> </td>
+			<td class="note1"> [NA] </td>
+			<td class="note2">
+				"?" cannot be gained.
+			</td>
+			<td class="note-margin"> </td>
+		</tr>
+		<tr>
+			<td class="note-margin"> </td>
+			<td class="note1"> A </td>
+			<td class="note2">
+				If it becomes broken/Reduced/Wounded/berserk/overstacked/captured, uses Non-Assault Movement, attacked in CC
+				<i>[EXC: an ambush that eliminates/captures its taret; A11.4]</i>, is in Location that enemy Infantry/Cavalry attempt
+				to enter during the MPh/RtPh, is forced back to its last Location via Detection (A12.15), is in an obstacle where a
+				vehicle ends its MPh in Bypass (A12.42), is attacked resulting in at least a PTC (or its corresponding DR, on the
+				&starf; Vehicle line or for OBA [or for an A-T Mine Immobilization result] vs a vehicle) on the IFT <i>EXC: A-P Mine
+				Attacks; B28.411]</i>, is a vehicle hit by ordnance, is in a Location successfully Searched by the enemy, is a Dummy
+				in a building successfully Mopped Up by the Enemy, fails a PAATC caused by a vehicle's entry of its Location (A12.41),
+				or is attacked by a Sniper dr (A14.3) or WP NMC (A24.31).
+			</td>
+			<td class="note-margin"> </td>
+		</tr>
+		<tr>
+			<td class="note-margin"> </td>
+			<td class="note1"> B </td>
+			<td class="note2">
+				It if/its PRC/its manning Infantry: moves/advances/withdraws into an Open Ground hex (A10.531), is in
+				Motion, expends any vehicular MP/MF, fires or directes fire, or fires (not just attempts to use) a Smoke Discharger
+				(D13.3).
+			</td>
+			<td class="note-margin"> </td>
+		</tr>
+		<tr>
+			<td class="note-margin"> </td>
+			<td class="note1"> C </td>
+			<td class="note2">
+				If it engages in any other action <i>[EXC: using a radio/field phone; Spotting; taking a PATTC (and Leader
+				DRM applied to such a PAATC) not caused by a vehicle entering its Location; SW/Gun repair attempts, dropping SW;
+				taking a Set DC NTC]</i>; e.g., attempts to entrench, kindle a Fire, Deploy, Recombine, make a Sniper/PF/MOL/ATMM
+				Check, rally a broken unit, apply Leader DRM <i>[EXC: PAATC; Armor Leader]</i>, use Clearance, place SMOKE grenades,
+				etc.
+			</td>
+			<td class="note-margin"> </td>
+		</tr>
+		<tr>
+			<td class="note-margin"> </td>
+			<td class="note1"> D </td>
+			<td class="note2">
+				If it/its PRC/its manning Infantry is designated as an Opportunity Firer (A7.25), or changes CA, or if its
+				manning Infantry fire their inherent FP/any SW.
+			</td>
+			<td class="note-margin"> </td>
+		</tr>
+		<tr>
+			<td class="note-margin"> </td>
+			<td class="note1"> E </td>
+			<td class="note2">
+				If it: becomes broken/Reduced/berserk/Wounded/overstacked, it attacked resulting in at least a PTC on the
+				IFT <i>[EXC: A-P Mine attack; B28.411]</i>, or is attacked by a Sniper dr (A14.3) or WP NMC (A24.31).
+			</td>
+			<td class="note-margin"> </td>
+		</tr>
+		<tr>
+			<td class="note-margin"> </td>
+			<td class="note1"> F </td>
+			<td class="note2">
+				If it: becomes broken/Reduced/Wounded, is in a Location successfully Searched by the enemy, or is a Dummy
+				in a building successfully Mopped Up by the enemy.
+			</td>
+			<td class="note-margin"> </td>
+		</tr>
+		<tr>
+			<td class="note-margin"> </td>
+			<td class="note1"> G </td>
+			<td class="note2">
+				It if: uses IFR; or fires its Gun at a range of zero, or at a range of 1-16 hexes with a colored dr &ge;
+				5 in its Original TH DR, or at &ge; hexes with such a colored dr of 6 <i>[EXC: a RCL would automatically
+				lose its "?"; C12.12]</i> (the range is that from nearest Good Order enemy ground unit to the Gun--not
+				necessarily that from the target to the Gun).
+			</td>
+			<td class="note-margin"> </td>
+		</tr>
+		<tr>
+			<td class="note-margin"> </td>
+			<td class="note1"> H </td>
+			<td class="note2">
+				Its "?" (or HIP for a Fortification) is lost automatically.
+			</td>
+			<td class="note-margin"> </td>
+		</tr>
+		<tr>
+			<td class="note-margin"> </td>
+			<td class="note1"> I </td>
+			<td class="note2">
+				"?" is gamed only if the unit is in Good Order and first makes a Final Concealment dr &le; 5 (A12.122).
+			</td>
+			<td class="note-margin"> </td>
+		</tr>
+		<tr>
+			<td class="note-margin"> </td>
+			<td class="note1"> J </td>
+			<td class="note2">
+				"?" is gained if the unit is in Good Order.
+			</td>
+			<td class="note-margin"> </td>
+		</tr>
+		<tr>
+			<td class="note-margin"> </td>
+			<td class="note1"> K </td>
+			<td class="note2">
+				"?" is gained if the unit is in Good Order <i>[EXC: it must first make a Final Concealment dr &le; 5
+				if an unbroken enemy ground unit is within 16 hexes of it; A12.122]</i>.
+			</td>
+			<td class="note-margin"> </td>
+		</tr>
+		<tr>
+			<td class="note-margin"> </td>
+			<td class="note1"> L </td>
+			<td class="note2">
+				If a unit therein loses its "?"/HIP, or if use of its protective DRM is claimed.
+			</td>
+			<td class="note-margin"> </td>
+		</tr>
+	</table>
+
+	<p>
+	
+	<table style="border-collapse:collapse; font-size:75%;" cellpadding="0" width="100%">
+		<tr>
+			<td style="vertical-align:top; width:45%;" align="center">
+				<table class="searching" numcols=2>
+					<tr class="note">
+						<td colspan="4" style="text-align:center;">
+							<font style="font-weight:bold; font-size:130%;">A12.152 SEARCHING:</font> (MMC only)
+						</td>
+					</tr>
+					<tr>
+						<td class="search-margin"> </td>
+						<td colspan="2" style="text-align:center;">dr = number of hexes which CANNOT be searched </td>
+						<td class="search-margin"> </td>
+					</tr>
+					<tr>
+						<td class="search-margin"> </td>
+						<td><b>drm</b> </td>
+						<td><b>Cause</b> </td>
+						<td class="search-margin"> </td>
+					</tr>
+					<tr>
+						<td class="search-margin"> </td>
+						<td class="search-note1">-1 </td>
+						<td class="search-note1">Per Stealthy Searching unit</td>
+						<td class="search-margin"> </td>
+					</tr>
+					<tr>
+						<td class="search-margin"> </td>
+						<td class="search-note2">-1 </td>
+						<td class="search-note2">Per HS equivalent > one HS Searching </td>
+						<td class="search-margin"> </td>
+					</tr>
+					<tr>
+						<td class="search-margin"> </td>
+						<td class="search-note1">+x </td>
+						<td class="search-note1">Leadership factor of best participating leader </td>
+						<td class="search-margin"> </td>
+					</tr>
+					<tr>
+						<td class="search-margin"> </td>
+						<td class="search-note2">+1 </td>
+						<td class="search-note2">Per Lax or CX Searching unit (per each condition) </td>
+						<td class="search-margin"> </td>
+					</tr>
+					<tr>
+						<td class="search-margin"> </td>
+						<td class="search-note1">+2 </td>
+						<td class="search-note1">vs Japanese <i>[EXC: vs building/rubble only]</i> (G1.63) </td>
+						<td class="search-margin"> </td>
+					</tr>
+					<tr>
+						<td class="search-margin"> </td>
+						<td colspan="2"><b>A12.154 SEARCH AND MOPPING UP CASUALTIES</b> &nbsp; dr &le; 1 = IFT K result &nbsp; </td>
+						<td class="search-margin"> </td>
+					</tr>
+				</table>
+			</td>
+			<td style="text-align:center; vertical-align:middle; width:10%; padding:5px;">
+				<img src="chart-chits/concealment-blue.png" border="1">
+			</td>
+			<td style="vertical-align:top; width:45%;" align="center">
+				<table class="searching">
+					<tr class="note">
+						<td colspan="4" style="text-align:center;">
+							<font style="font-weight:bold; font-size:130%;">A12.122 CONCEALMENT drm</font>
+						</td>
+					</tr>
+					<tr>
+						<td class="search-margin"> </td>
+						<td colspan="2" style="text-align:center;">US# are SMC:1 &nbsp;
+							HS:2 &nbsp;
+							Squad:3 &nbsp;
+							Gun/AFV:4 &nbsp;
+							Large AFV:5
+						</td>
+						<td class="search-margin"> </td>
+					</tr>
+					<tr>
+						<td class="search-margin"> </td>
+						<td><b>drm</b> </td>
+						<td><b>Cause</b> </td>
+						<td class="search-margin"> </td>
+					</tr>
+					<tr>
+						<td class="search-margin"> </td>
+						<td class="search-note1">+X </td>
+						<td class="search-note1">X is US# of unit or its possessed Gun/Horse</td>
+						<td class="search-margin"> </td>
+					</tr>
+					<tr>
+						<td class="search-margin"> </td>
+						<td class="search-note2">+Z </td>
+						<td class="search-note2">Z is Leadership of best leader in same Location unless alone (10.7) </td>
+						<td class="search-margin"> </td>
+					</tr>
+					<tr>
+						<td class="search-margin"> </td>
+						<td class="search-note1">+1 </td>
+						<td class="search-note1">Lax </td>
+						<td class="search-margin"> </td>
+					</tr>
+					<tr>
+						<td class="search-margin"> </td>
+						<td class="search-note2">-Y </td>
+						<td class="search-note2">Y is TEM and Hindrance DRM of hex occupied (all hexside TEM are NA) &nbsp; </td>
+						<td class="search-margin"> </td>
+					</tr>
+					<tr>
+						<td class="search-margin"> </td>
+						<td class="search-note1">-1 </td>
+						<td class="search-note1">Stealthy </td>
+						<td class="search-margin"> </td>
+					</tr>
+					<tr>
+						<td class="search-margin"> </td>
+						<td class="search-note2">-2 </td>
+						<td class="search-note2">Japanese (G1.63) </td>
+						<td class="search-margin"> </td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+	<br>
+	
+</body>
+</html>

@@ -2,9 +2,9 @@
 
 
   <div class="w3-container">
-    <h1>Welcome to ASL Helper</h1>
+    <h1>Welcome to ASL Assist</h1>
   </div>
-<p>In here you can find a HMTL based Phase reference.</p>
+<p>In here you can find a HTML based Phase reference and all the needed tables.</p>
 
 
 

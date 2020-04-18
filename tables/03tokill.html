@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Ordnance To Kill </title>
+</head>
+
+<!-- ************************************************************************************ -->
+
+<style type="text/css">
+	table.tohit { font-size:100%; border-collapse:collapse;
+		border:2px solid black; background-color:#FFFFFF; 
+		margin-left:0.25cm; margin-right:0.25cm; }
+
+	td.note { text-align:left; font-size:80%; }
+	td.note-top { text-align:left; vertical-align:top; font-size:80%; }
+	img.chit { border:1px solid black; }
+	img.chit-wrap { border:1px solid black; float:left; margin:2px 5px 2px 5px}
+	img.chit-noborder { float:left; margin:2px 5px 2px 5px}
+	sup.sf { font-size:70%; }
+	
+	table.other {margin-top:0.2cm; margin-bottom:0.2cm; margin-left:0.2cm; margin-right:0.2cm;
+			border-collapse:collapse; table-layout:fixed; 
+			padding-top:1.2cm; padding-bottom:1.2cm; padding-left:1.2cm; padding-right:1.2cm; }
+	
+	td.tohit-title1 { font-weight:bold; border-collapse:collapse; font-size:120%; text-align:center; }
+	td.tohit-title2a { font-size:100%; font-weight:bold; border-collapse:collapse; background-color:#FFFFFF; text-align:center; }
+	td.tohit-title2b { font-size:100%; font-weight:bold; border-collapse:collapse; background-color:#FFFFFF; }
+
+	td.tohit-bn { font-size:100%; border-collapse:collapse; background-color:#D5E6ED; }
+	td.tohit-bnc { font-size:100%; border-collapse:collapse; background-color:#D5E6ED; text-align:center; }
+	td.tohit-bb { font-size:100%; border-collapse:collapse; background-color:#D5E6ED; text-align:right; font-weight:bold; }
+	td.tohit-br { font-size:100%; border-collapse:collapse; background-color:#D5E6ED; text-align:left; font-weight:bold; color:#E60000; }
+	td.tohit-wn { font-size:100%; border-collapse:collapse; }
+	td.tohit-wnc { font-size:100%; border-collapse:collapse; text-align:center; }
+	td.tohit-wb { font-size:100%; border-collapse:collapse; text-align:right; font-weight:bold; }
+	td.tohit-wr { font-size:100%; border-collapse:collapse; text-align:left; font-weight:bold; color:#E60000; }
+
+	td.border-na { border-collapse:collapse; border:1px solid black;
+		border-top-style:solid; border-top-width:1; border-top-color:red;
+		border-bottom-style:solid; border-bottom-width:1; border-bottom-color:red;
+		border-left-style:solid; border-left-width:1; border-left-color:red;
+		border-right-style:solid; border-right-width:1; border-right-color:red }
+		
+	td.border-bottom { border-collapse:collapse; 
+		border-bottom-style:solid; border-bottom-width:1; border-bottom-color:black }
+
+	td.chart-cell { padding-top:0.25cm; padding-bottom:0.25cm; padding-right:5px; padding-left:5px; }
+	table.c5 { border-collapse:collapse; background-color:#FFFFFF; border:2px solid black;
+		margin-left:0.25cm; margin-right:0.25cm; width:500px; }
+	table.c5-1000 { border-collapse:collapse; background-color:#FFFFFF; border:2px solid black;
+		margin-left:0.25cm; margin-right:0.25cm; width:1100px; }
+	table.c5b { border-collapse:collapse; background-color:#FFFFFF; }
+	td.c5-title { font-weight:bold; font-size:120%; border-collapse:collapse; }
+
+	table.tk { border-collapse:collapse; border:2px solid black; background-color:#FFFFFF; margin-left:0.25cm; margin-right:0.25cm; }
+	table.tk1 { border-collapse:collapse; background-color:#FFFFFF; }
+	td.tk-title { font-weight:bold; }
+	td.tk-white1 { text-align:center; font-weight:bold; }
+	td.tk-white2 { text-align:center; }
+	td.tk-white3 { text-align:left; }
+	td.tk-white4 { text-align:left; font-weight:bold; }
+	td.tk-blue1 { text-align:center; background-color:#D5E6ED; font-weight:bold; }
+	td.tk-blue2 { text-align:center; background-color:#D5E6ED; }
+	td.tk-blue3 { text-align:left; background-color:#D5E6ED; }
+	td.tk-grey1 { text-align:center; background-color:#CCCCCC; font-weight:bold; }
+	td.tk-grey2 { text-align:center; background-color:#CCCCCC; }
+	td.tk-grey3 { text-align:left; background-color:#CCCCCC; }
+	td.tk-grey4 { text-align:left; background-color:#CCCCCC; font-weight:bold; }
+
+	font.tk-orange { color:#E19600; }
+	font.tk-brown { color:#9D7900; }
+	font.tk-red { color:#E60000; }
+	font.tk-purple { color:#7E00D2; }
+	font.tk-grey { color:#AAAAAA; }
+	font.tk-green { color:#008000; }
+	font.tk-yellow { color:#C1C100; }
+	font.tk-teal { color:#23BFAD; }
+	font.tk-pink { color:#FF5DD9; }
+	font.tk-blue { color:#67ACDA; }
+	font.tk-ltblue { color:#66CCFF; }
+
+</style>
+
+<body bgcolor="#85C7E5">
+
+<!-- ************************************************************************************ -->
+<!-- Basic Tables #3 ******************************************************************** -->
+<!-- ************************************************************************************ -->
+
+<table bgcolor="#85C7E5" width="1100" align="center" style="border-collapse:collapse;">
+<tr>
+	<td> &nbsp; </td>
+</tr>
+
+<!-- BEGIN: C7.31 AP TO KILL TABLE ****************************************************** -->
+<tr>
+	<td valign="top" align="center">
+		<table numcols="24" class="c5-1000" style="margin-top:0.10cm; white-space:nowrap">
+			<tr>
+				<td colspan="23" class="c5-title"> C7.31 &mdash; AP TO KILL TABLE </td>
+				<td class="c5-title" style="text-align:right;"> &Delta; </td>
+			</tr>
+			<tr>
+				<td class="tk-white1" colspan="8" style="text-align:left"> ARMORED TARGET </td>
+				<td class="tk-white1"> 37LL </td>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1"> 50L </td>
+				<td class="tk-white1" colspan="3">  </td>
+				<td class="tk-white1"> 75L </td>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1"> 90L </td>
+				<td class="tk-white1" colspan="6">  </td>
+			</tr>
+			<tr>
+				<td class="tk-white1" colspan="2" style="text-align:left"> GUN SIZE: </td>
+				<td class="tk-white1"><font class="tk-orange"> 42F </font></td>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1"> 37 </td>
+				<td class="tk-white1"> 37L </td>
+				<td class="tk-white1"> 40L </td>
+				<td class="tk-white1"> 45LL </td>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1"><font class="tk-green"> 75 </font></td>
+				<td class="tk-white1" colspan="3">  </td>
+				<td class="tk-white1"> 76L </td>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1"> 105L </td>
+				<td class="tk-white1" colspan="6">  </td>
+			</tr>
+			<tr>
+				<td class="tk-white1" colspan="2">  </td>
+				<td class="tk-white1"><font class="tk-pink"> 12.7 </font></td>
+				<td class="tk-white1"><font class="tk-orange"> 44F </font></td>
+				<td class="tk-white1"> 20LL </td>
+				<td class="tk-white1"> 47* </td>
+				<td class="tk-white1"> 57 </td>
+				<td class="tk-white1"> 45L </td>
+				<td class="tk-white1"> 47L </td>
+				<td class="tk-white1"><font class="tk-teal"> 75* </font></td>
+				<td class="tk-white1"><font class="tk-brown"> 76L </font></td>
+				<td class="tk-white1" colspan="3">  </td>
+				<td class="tk-white1"> 85L </td>
+				<td class="tk-white1" colspan="2">  </td>
+				<td class="tk-white1"> 150 </td>
+				<td class="tk-white1" colspan="2">  </td>
+				<td class="tk-white1"> 88LL </td>
+				<td class="tk-white1" colspan="3">  </td>
+			</tr>
+			<tr>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1"><font class="tk-orange"> 39F </font></td>
+				<td class="tk-white1"> 15 </td>
+				<td class="tk-white1"><font class="tk-red"> ATR </font></td>
+				<td class="tk-white1"> 25LL </td>
+				<td class="tk-white1"> 57* </td>
+				<td class="tk-white1"> 65* </td>
+				<td class="tk-white1"> 47 </td>
+				<td class="tk-white1"> 50 </td>
+				<td class="tk-white1"> 76 </td>
+				<td class="tk-white1"><font class="tk-blue"> 88 </font></td>
+				<td class="tk-white1"> 75 </td>
+				<td class="tk-white1"> 57L </td>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1"> 150* </td>
+				<td class="tk-white1"> 77L </td>
+				<td class="tk-white1"><font class="tk-grey"> 90L </font></td>
+				<td class="tk-white1"> 152 </td>
+				<td class="tk-white1"> 75LL </td>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1"> 100L </td>
+				<td class="tk-white1"> 150L </td>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1"> 128L </td>
+			</tr>
+			<tr>
+				<td class="tk-white2">  </td>
+				<td class="tk-white1"><font class="tk-purple"> @MG </font></td>
+				<td class="tk-white1"> ATR </td>
+				<td class="tk-white1"> 20L </td>
+				<td class="tk-white1"> 37* </td>
+				<td class="tk-white1"> 70* </td>
+				<td class="tk-white1"> 76* </td>
+				<td class="tk-white1"> 75* </td>
+				<td class="tk-white1"><font class="tk-yellow"> 88* </font></td>
+				<td class="tk-white1"> 84* </td>
+				<td class="tk-white1"> 120* </td>
+				<td class="tk-white1"> 105 </td>
+				<td class="tk-white1"> 57LL </td>
+				<td class="tk-white1"><font class="tk-brown"> 76LL </font></td>
+				<td class="tk-white1"> 152* </td>
+				<td class="tk-white1"> 200L </td>
+				<td class="tk-white1"> 88L </td>
+				<td class="tk-white1"> 155 </td>
+				<td class="tk-white1"> 76LL </td>
+				<td class="tk-white1"> 122L </td>
+				<td class="tk-white1"> 120L </td>
+				<td class="tk-white1"> 155L </td>
+				<td class="tk-white1"> 140L </td>
+				<td class="tk-white1"> 170L </td>
+			</tr>
+			<tr>
+				<td class="tk-blue2" style="text-align:left; font-weight:bold;"> BASIC TK# </td>
+				<td class="tk-blue2" style="column-width:100px"> 4 </td>
+				<td class="tk-blue2" style="column-width:100px"> 5 </td>
+				<td class="tk-blue2" style="column-width:100px"> 6 </td>
+				<td class="tk-blue2" style="column-width:100px"> 7 </td>
+				<td class="tk-blue2" style="column-width:100px"> 8 </td>
+				<td class="tk-blue2" style="column-width:100px"> 9 </td>
+				<td class="tk-blue2" style="column-width:100px"> 10 </td>
+				<td class="tk-blue2" style="column-width:100px"> 11 </td>
+				<td class="tk-blue2" style="column-width:100px"> 12 </td>
+				<td class="tk-blue2" style="column-width:100px"> 13 </td>
+				<td class="tk-blue2" style="column-width:100px"> 14 </td>
+				<td class="tk-blue2" style="column-width:100px"> 15 </td>
+				<td class="tk-blue2" style="column-width:100px"> 16 </td>
+				<td class="tk-blue2" style="column-width:100px"> 17 </td>
+				<td class="tk-blue2" style="column-width:100px"> 19 </td>
+				<td class="tk-blue2" style="column-width:100px"> 20 </td>
+				<td class="tk-blue2" style="column-width:100px"> 21 </td>
+				<td class="tk-blue2" style="column-width:100px"> 23 </td>
+				<td class="tk-blue2" style="column-width:100px"> 25 </td>
+				<td class="tk-blue2" style="column-width:100px"> 27 </td>
+				<td class="tk-blue2" style="column-width:100px"> 28 </td>
+				<td class="tk-blue2" style="column-width:100px"> 32 </td>
+				<td class="tk-blue2" style="column-width:100px"> 33 </td>
+			</tr>
+			<tr style="border-top-style:solid; border-top-width:1px;">
+				<td colspan="24" style="font-size:90%;">
+					NOTES:
+					<font class="tk-purple"> @:Must be within Normal Range and not halved FP </font>
+						&nbsp; &nbsp;
+					<font class="tk-red"> &nbsp; &nbsp; Russian, Finnish, Japanese; Allied & Axis Minor/Italian (20L only) </font>
+						&nbsp; &nbsp;
+					<font class="tk-brown"> &nbsp; &nbsp; Russian/Japanese </font>
+						&nbsp; &nbsp;
+					<font class="tk-grey"> &nbsp; &nbsp; Italian </font>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="24" style="font-size:90%;">
+					<font class="tk-green"> Grant Gun </font>
+						&nbsp; &nbsp;
+					<font class="tk-blue"> &nbsp; &nbsp; British 88 (25 per) </font>
+						&nbsp; &nbsp;
+					<font class="tk-yellow"> &nbsp; &nbsp; Australian 88* (Baby 25 pdr) </font>
+						&nbsp; &nbsp;
+					<font class="tk-pink"> &nbsp; &nbsp; 12.7: .50 Cal MG </font>
+						&nbsp; &nbsp;
+					<font class="tk-orange"> &nbsp; &nbsp; F: Fighter MG armament by year </font>
+						&nbsp; &nbsp;
+					<font class="tk-teal"> &nbsp; &nbsp; Japanese 75* Year-38 Type </font>
+				</td>
+			</tr>
+			<tr style="border-top-style:solid; border-top-width:1px;">
+				<td colspan="24">
+					<table numcols="17" class="tk1" align="center" width="90%">
+						<tr style="font-weight:bold;">
+							<td style="text-align:right" width="100"> MODIFICATION/RANGE </td>
+							<td width="50" class="tk-white1"> 0-1 </td>
+							<td width="50" class="tk-white2"> 2 </td>
+							<td width="50" class="tk-white2"> 3-6 </td>
+							<td width="50" class="tk-white2"> 7-12 </td>
+							<td width="50" class="tk-white2"> 13-18 </td>
+							<td width="50" class="tk-white2"> 19-24 </td>
+							<td width="50" class="tk-white2"> 25-30 </td>
+							<td width="50" class="tk-white2"> 31-36 </td>
+							<td width="50" class="tk-white2"> 37-42 </td>
+							<td width="50" class="tk-white2"> 43-48 </td>
+							<td width="50" class="tk-white2"> 49-54 </td>
+							<td width="50" class="tk-white2"> 55-60 </td>
+							<td width="50" class="tk-white2"> 61-66 </td>
+							<td width="50" class="tk-white2"> 67-72 </td>
+							<td width="50" class="tk-white2"> 73-78 </td>
+							<td width="50" class="tk-white2"> 79+ </td>
+						</tr>
+						<tr>
+							<td class="tk-blue1" style="text-align:right; font-weight:bold"> MG / ATR / &le; 25mm: </td>
+							<td class="tk-blue2"> +2 </td>
+							<td class="tk-blue2"> +1 </td>
+							<td class="tk-blue2"> +1 </td>
+							<td class="tk-blue2"> 0 </td>
+							<td class="tk-blue2"> 0 </td>
+							<td class="tk-blue2"> -1 </td>
+							<td class="tk-blue2"> -2 </td>
+							<td class="tk-blue2"> -3 </td>
+							<td class="tk-blue2"> -4 </td>
+							<td class="tk-blue2"> -5 </td>
+							<td class="tk-blue2"> NA </td>
+							<td class="tk-blue2"> NA </td>
+							<td class="tk-blue2"> NA </td>
+							<td class="tk-blue2"> NA </td>
+							<td class="tk-blue2"> NA </td>
+							<td class="tk-blue2"> NA </td>
+						</tr>
+						<tr>
+							<td style="text-align:right; font-weight:bold"> 37-57mm: </td>
+							<td class="tk-white2"> +1 </td>
+							<td class="tk-white2"> +1 </td>
+							<td class="tk-white2"> 0 </td>
+							<td class="tk-white2"> 0 </td>
+							<td class="tk-white2"> 0 </td>
+							<td class="tk-white2"> -1 </td>
+							<td class="tk-white2"> -2 </td>
+							<td class="tk-white2"> -2 </td>
+							<td class="tk-white2"> -3 </td>
+							<td class="tk-white2"> -4 </td>
+							<td class="tk-white2"> -4 </td>
+							<td class="tk-white2"> -5 </td>
+							<td class="tk-white2"> NA </td>
+							<td class="tk-white2"> NA </td>
+							<td class="tk-white2"> NA </td>
+							<td class="tk-white2"> NA </td>
+						</tr>
+						<tr>
+							<td class="tk-blue1" style="text-align:right; font-weight:bold"> &ge; 65mm: </td>
+							<td class="tk-blue2"> +1 </td>
+							<td class="tk-blue2"> 0 </td>
+							<td class="tk-blue2"> 0 </td>
+							<td class="tk-blue2"> 0 </td>
+							<td class="tk-blue2"> 0 </td>
+							<td class="tk-blue2"> -1 </td>
+							<td class="tk-blue2"> -1 </td>
+							<td class="tk-blue2"> -2 </td>
+							<td class="tk-blue2"> -2 </td>
+							<td class="tk-blue2"> -3 </td>
+							<td class="tk-blue2"> -3 </td>
+							<td class="tk-blue2"> -4 </td>
+							<td class="tk-blue2"> -4 </td>
+							<td class="tk-blue2"> -5 </td>
+							<td class="tk-blue2" class="tk-blue2"> -5 </td>
+							<td class="tk-blue2"> NA </td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="24" align="center" style="font-size:80%;">
+					<b>UNARMORED TARGET:</b>
+						&nbsp;
+					FINAL TK# (Double if Critical Hit):
+						&nbsp; &nbsp;
+					IFE/MG-15mm: &#9733; Vehicle line on IFT
+						&nbsp; &nbsp;
+					ATR-28mm: 7
+						&nbsp; &nbsp;
+					37-57mm: 8
+						&nbsp; &nbsp;
+					65-77mm: 9
+						&nbsp; &nbsp;
+					85-95mm: 10
+						&nbsp; &nbsp;
+					100+mm: 11
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+<!-- END: C7.31 AP TO KILL TABLE ******************************************************** -->
+
+<!-- BEGIN: C7.32 APCR/APDS TO KILL TABLE *********************************************** -->
+<tr>
+	<td valign="top" align="center">
+		<table numcols="13" class="c5-1000" style="margin-top:0.10cm; white-space:nowrap">
+			<tr>
+				<td colspan="12" class="c5-title"> C7.32 &mdash; APCR/APDS TO KILL TABLE </td>
+				<td class="c5-title" style="text-align:right;"> &Delta; </td>
+			</tr>
+			<tr>
+				<td class="tk-white1" colspan="4">  </td>
+				<td class="tk-white1"> &nbsp; 40LL &nbsp; </td>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1"> &nbsp; 57LL &nbsp; </td>
+				<td class="tk-white1" colspan="6">  </td>
+			</tr>
+			<tr>
+				<td class="tk-white1" style="text-align:left;"> ARMORED TARGET </td>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1"> &nbsp; 28LL &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 45LL &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 50 </td>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1"> &nbsp; D57L &nbsp; </td>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1"> &nbsp; 75L &nbsp; </td>
+				<td class="tk-white1" colspan="4">  </td>
+			</tr>
+			<tr style="border-bottom-style:solid; border-bottom-width:1px;">
+				<td class="tk-white1" style="text-align:left;"> GUN SIZE: </td>
+				<td class="tk-white1"> &nbsp; 37L &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 45L &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 47L &nbsp; </td>
+				<td class="tk-white1"> &nbsp; <font class="tk-brown"> 76L </font> &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 50L &nbsp; </td>
+				<td class="tk-white1"> &nbsp; <font class="tk-brown"> 76LL </font> &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 85L &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 76L &nbsp; </td>
+				<td class="tk-white1"> &nbsp; <font class="tk-green"> 76L &nbsp; </font> </td>
+				<td class="tk-white1"> &nbsp; 88L &nbsp; </td>
+				<td class="tk-white1"> &nbsp; D76LL &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 90L &nbsp; </td>
+			</tr>
+			<tr style="border-bottom-style:solid; border-bottom-width:1px;">
+				<td class="tk-blue1" style="text-align:left;"> BASIC TK#: </td>
+				<td class="tk-blue1" style="column-width:100px"> 10 </td>
+				<td class="tk-blue1" style="column-width:100px"> 12 </td>
+				<td class="tk-blue1" style="column-width:100px"> 13 </td>
+				<td class="tk-blue1" style="column-width:100px"> 14 </td>
+				<td class="tk-blue1" style="column-width:100px"> 17 </td>
+				<td class="tk-blue1" style="column-width:100px"> 18 </td>
+				<td class="tk-blue1" style="column-width:100px"> 19 </td>
+				<td class="tk-blue1" style="column-width:100px"> 20 </td>
+				<td class="tk-blue1" style="column-width:100px"> 22 </td>
+				<td class="tk-blue1" style="column-width:100px"> 23 </td>
+				<td class="tk-blue1" style="column-width:100px"> 25 </td>
+				<td class="tk-blue1" style="column-width:100px"> 27 </td>
+			</tr>
+			<tr style="border-bottom-style:solid; border-bottom-width:2px;">
+				<td class="tk-white1" style="text-align:left;"> UNARMORED TARGET: </td>
+				<td class="tk-white1" colspan="4" style="font-weight:normal; text-align:left;"> Use AP To Kill Table </td>
+				<td class="tk-white1" colspan="2"><font class="tk-brown"> Russian </font></td>
+				<td class="tk-white1" colspan="2"><font class="tk-green"> U.S. </font></td>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1">  </td>
+			</tr>
+			<tr>
+				<td class="tk-white1"> MODIFICATION/RANGE: </td>
+				<td class="tk-white1"> &nbsp; 0-1 &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 2 &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 3-6 &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 7-12 &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 13-18 &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 19-24 &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 25-30 &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 31-36 &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 37-42 &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 43-48 &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 49+ &nbsp; </td>
+				<td class="tk-white1">  </td>
+			</tr>
+			<tr>
+				<td class="tk-white1" colspan="13" style="text-align:left;"> Case D TK# CHANGE: </td>
+			</tr>
+			<tr>
+				<td class="tk-blue1" style="text-align:right;"> APCR &le; 57mm: </td>
+				<td class="tk-blue2"> +3 </td>
+				<td class="tk-blue2"> +2 </td>
+				<td class="tk-blue2"> +1 </td>
+				<td class="tk-blue2"> 0 </td>
+				<td class="tk-blue2"> -2 </td>
+				<td class="tk-blue2"> -4 </td>
+				<td class="tk-blue2"> -6 </td>
+				<td class="tk-blue2"> NA </td>
+				<td class="tk-blue2"> NA </td>
+				<td class="tk-blue2"> NA </td>
+				<td class="tk-blue2"> NA </td>
+				<td class="tk-blue2">  </td>
+			</tr>
+			<tr>
+				<td class="tk-white1" style="text-align:right;"> APCR &ge; 75mm: </td>
+				<td class="tk-white2"> +3 </td>
+				<td class="tk-white2"> +2 </td>
+				<td class="tk-white2"> +1 </td>
+				<td class="tk-white2"> 0 </td>
+				<td class="tk-white2"> -1 </td>
+				<td class="tk-white2"> -3 </td>
+				<td class="tk-white2"> -4 </td>
+				<td class="tk-white2"> -5 </td>
+				<td class="tk-white2"> -6 </td>
+				<td class="tk-white2"> -7 </td>
+				<td class="tk-white2"> NA </td>
+				<td class="tk-white2">  </td>
+			</tr>
+			<tr>
+				<td class="tk-blue1" style="text-align:right;"> APDS (D): </td>
+				<td class="tk-blue2"> +1 </td>
+				<td class="tk-blue2"> 0 </td>
+				<td class="tk-blue2"> 0 </td>
+				<td class="tk-blue2"> 0 </td>
+				<td class="tk-blue2"> 0 </td>
+				<td class="tk-blue2"> 0 </td>
+				<td class="tk-blue2"> -1 </td>
+				<td class="tk-blue2"> -2 </td>
+				<td class="tk-blue2"> -3 </td>
+				<td class="tk-blue2"> -4 </td>
+				<td class="tk-blue2"> NA </td>
+				<td class="tk-blue2">  </td>
+			</tr>
+		</table>
+	</td>
+</tr>
+<!-- END: C7.32 APCR/APDS TO KILL TABLE ************************************************* -->
+
+<!-- BEGIN: C7.33 HEAT TO KILL TABLE **************************************************** -->
+<tr>
+	<td valign="top" align="center">
+		<table numcols="12" class="c5-1000" style="margin-top:0.10cm; white-space:nowrap">
+			<tr>
+				<td colspan="11" class="c5-title"> C7.33 &mdash; HEAT TO KILL TABLE </td>
+				<td class="c5-title" style="text-align:right;"> &Delta; </td>
+			</tr>
+			<tr>
+				<td class="tk-white1" colspan="10">  </td>
+				<td class="tk-white1"> &nbsp; (Sept43) &nbsp; </td>
+				<td class="tk-white1">  </td>
+			</tr>
+			<tr>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1"> &nbsp; 57 &nbsp; </td>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1"> &nbsp; BAZ43 &nbsp; </td>
+				<td class="tk-white1" colspan="6">  </td>
+				<td class="tk-white1"> &nbsp; PSK &nbsp; </td>
+				<td class="tk-white1">  </td>
+			</tr>
+			<tr>
+				<td class="tk-white1" style="text-align:left;"> ARMORED TARGET </td>
+				<td class="tk-white1"> &nbsp; 65 &nbsp; </td>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1"> &nbsp; 75 &nbsp; </td>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1"> &nbsp; PIAT &nbsp; </td>
+				<td class="tk-white1"> &nbsp; BAZ44+ &nbsp; </td>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1"> &nbsp; (Aug43) &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 37 &nbsp; </td>
+				<td class="tk-white1"> &nbsp; (Oct43) &nbsp; </td>
+			</tr>
+			<tr style="border-bottom-style:solid; border-bottom-width:1px;">
+				<td class="tk-white1" style="text-align:left;"> GUN SIZE: </td>
+				<td class="tk-white1"> &nbsp; 94 &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 70 &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 76 &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 100 &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 105 &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 95 &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 122 &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 150 &nbsp; </td>
+				<td class="tk-white1"> &nbsp; PFk &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 47 &nbsp; </td>
+				<td class="tk-white1"> &nbsp; PF &nbsp; </td>
+			</tr>
+			<tr style="border-bottom-style:solid; border-bottom-width:1px;">
+				<td class="tk-blue1" style="text-align:left;"> BASIC TK#: </td>
+				<td class="tk-blue1" style="column-width:100px"> 11 </td>
+				<td class="tk-blue1" style="column-width:100px"> 12 </td>
+				<td class="tk-blue1" style="column-width:100px"> 13 </td>
+				<td class="tk-blue1" style="column-width:100px"> 14 </td>
+				<td class="tk-blue1" style="column-width:100px"> 15 </td>
+				<td class="tk-blue1" style="column-width:100px"> 16 </td>
+				<td class="tk-blue1" style="column-width:100px"> 17 </td>
+				<td class="tk-blue1" style="column-width:100px"> 21 </td>
+				<td class="tk-blue1" style="column-width:100px"> 22 </td>
+				<td class="tk-blue1" style="column-width:100px"> 26 </td>
+				<td class="tk-blue1" style="column-width:100px"> 31 </td>
+			</tr>
+			<tr style="border-bottom-style:solid; border-bottom-width:1px;">
+				<td><b> UNARMORED TARGET: </td>
+				<td colspan="11"> 11 Final TK# (22 Final TK# if Critical Hit) </td>
+			</tr>
+			<tr>
+				<td> Case D: NA </td>
+				<td colspan="11"> PF RANGE: Aug 43+: 1; &nbsp; June 44+: 2; &nbsp; 45+: 3 &nbsp; &nbsp; &nbsp; &nbsp; PFk Range: 1 </td>
+			</tr>
+		</table>
+	</td>
+</tr>
+<!-- END: C7.33 HEAT TO KILL TABLE ****************************************************** -->
+
+<!-- BEGIN: C7.34 HE AND FLAME TO KILL TABLE ******************************************** -->
+<tr>
+	<td valign="top" align="center">
+		<table numcols="14" class="c5-1000" style="margin-top:0.10cm; white-space:nowrap">
+			<tr>
+				<td colspan="13" class="c5-title"> C7.34 &mdash; HE AND FLAME TO KILL TABLE <font size="-1">(no mortars)</font> </td>
+				<td class="c5-title" style="text-align:right;"> &Delta; </td>
+			</tr>
+			<tr>
+				<td class="tk-white1" colspan="11">  </td>
+				<td class="tk-white1"> &nbsp; [ &nbsp; </td>
+				<td class="tk-white1"> &nbsp; AF NA &nbsp; </td>
+				<td class="tk-white1"> &nbsp; ] &nbsp; </td>
+			</tr>
+			<tr style="border-bottom-style:solid; border-bottom-width:1px;">
+				<td class="tk-white1" style="text-align:left;"> GUN SIZE: </td>
+				<td class="tk-white1"> &nbsp; 20+ &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 30+ &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 40+ &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 50+ &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 70+ &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 80+ &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 100+ &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 120+ &nbsp; </td>
+				<td class="tk-white1"> &nbsp; 150+ &nbsp; </td>
+				<td class="tk-white1"> &nbsp; DC &nbsp; </td>
+				<td class="tk-white1"> &nbsp; FT &nbsp; </td>
+				<td class="tk-white1"> &nbsp; MOL &nbsp; </td>
+				<td class="tk-white1"> &nbsp; MOL-P &nbsp; </td>
+			</tr>
+			<tr style="border-bottom-style:solid; border-bottom-width:1px;">
+				<td class="tk-blue1" style="text-align:left;"> ARMORED TARGET: <span style="font-weight:normal;">BASIC TK#:</span> </td>
+				<td class="tk-blue1"> &nbsp; 3 &nbsp; </td>
+				<td class="tk-blue1"> &nbsp; 4 &nbsp; </td>
+				<td class="tk-blue1"> &nbsp; 5 &nbsp; </td>
+				<td class="tk-blue1"> &nbsp; 6 &nbsp; </td>
+				<td class="tk-blue1"> &nbsp; 7 &nbsp; </td>
+				<td class="tk-blue1"> &nbsp; 8 &nbsp; </td>
+				<td class="tk-blue1"> &nbsp; 10 &nbsp; </td>
+				<td class="tk-blue1"> &nbsp; 12 &nbsp; </td>
+				<td class="tk-blue1"> &nbsp; 16 &nbsp; </td>
+				<td class="tk-blue1"> &nbsp; 16 &nbsp; </td>
+				<td class="tk-blue1"> &nbsp; 8<sup>2</sup> &nbsp; </td>
+				<td class="tk-blue1"> &nbsp; 6<sup>3</sup> &nbsp; </td>
+				<td class="tk-blue1"> &nbsp; 6<sup>4</sup> &nbsp; </td>
+			</tr>
+			<tr>
+				<td class="tk-white1" style="text-align:left;"> UNARMORED TARGET: <span style="font-weight:normal;">FINAL TK#:</span> </td>
+				<td class="tk-white1" style="column-width:100px"> &nbsp; 20+ &nbsp; </td>
+				<td class="tk-white1" style="column-width:100px"> &nbsp; 30+ &nbsp; </td>
+				<td class="tk-white1" style="column-width:100px"> &nbsp; 40+ &nbsp; </td>
+				<td class="tk-white1" style="column-width:100px"> &nbsp; 50+ &nbsp; </td>
+				<td class="tk-white1" style="column-width:100px"> &nbsp; 70+ &nbsp; </td>
+				<td class="tk-white1" style="column-width:100px"> &nbsp; 80+ &nbsp; </td>
+				<td class="tk-white1" style="column-width:100px"> &nbsp; 100+ &nbsp; </td>
+				<td class="tk-white1" style="column-width:100px"> &nbsp; 120+ &nbsp; </td>
+				<td class="tk-white1" style="column-width:100px"> &nbsp; 150+ &nbsp; </td>
+				<td class="tk-white1" style="column-width:100px"> &nbsp; DC &nbsp; </td>
+				<td class="tk-white1" style="column-width:100px"> &nbsp; FT &nbsp; </td>
+				<td class="tk-white1" style="column-width:100px"> &nbsp; MOL &nbsp; </td>
+				<td class="tk-white1" style="column-width:100px"> &nbsp; MOL-P &nbsp; </td>
+			</tr>
+			<tr>
+				<td colspan="1" style="font-size:75%;"> Case D NA <i>[EXC: FT]</i> </td>
+				<td colspan="13" style="font-size:75%;"> <sup>1</sup>: Double if Critical Hit <i>[EXC: DC, FT, MOL]</i> </td>
+			</tr>
+			<tr>
+				<td colspan="1" style="font-size:75%;"> <sup>2,3,4</sup>: Only TK# Modifiers are </td>
+				<td colspan="5" style="font-size:75%;"> <sup>2</sup>: Half if Long Range; +1 if CE & +2 if OT </td>
+				<td>  </td>
+				<td colspan="7" style="font-size:75%;"> <sup>3</sup>: +1 if CE CT or +2 if OT; -2 vs Moving Target; +1/+2 Elevation adv. (C7.22) </td>
+			</tr>
+			<tr>
+				<td colspan="1" style="font-size:75%;"> +1 if Rear Target Facing and: </td>
+				<td colspan="13" style="font-size:75%;"> <sup>4</sup>: +1 if OT; double if CH  </td>
+			</tr>
+		</table>
+	</td>
+</tr>
+<!-- END: C7.34 HE AND FLAME TO KILL TABLE ********************************************** -->
+
+<!-- ROW OF TWO -->
+<tr>
+	<td>
+		<table numcols="2" bgcolor="#85C7E5" align="center" style="margin-top:0.10cm; white-space:nowrap">
+			<tr>
+<!-- BEGIN: OBTAINING MODIFIED TK ******************************************************* -->
+				<td valign="center" align="center">
+					<table numcols="2" class="c5">
+						<tr>
+							<td class="c5-title"> C7.2 &mdash; OBTAINING MODIFIED TK# </td>
+							<td class="c5-title" style="text-align:right;"> &Delta; </td>
+						</tr>
+						<tr>
+							<td colspan="2"> A. Rear Target Facing: +1 to BASIC TK# </td>
+						</tr>
+						<tr>
+							<td colspan="2"> B. Aerial/DC/MOL Elevation Advantage: BASIC TK# +1; +2 if OT </td>
+						</tr>
+						<tr>
+							<td colspan="2"> C: Critical Hit: BASIC TK# &times; 2 </td>
+						</tr>
+						<tr>
+							<td colspan="2"> D: Range: AP, APCR/APDS, and FT Only </td>
+						</tr>
+					</table>
+				</td>
+<!-- END: OBTAINING MODIFIED TK ********************************************************* -->
+
+<!-- BEGIN: OBTAININD FINAL TK ********************************************************** -->
+				<td valign="center" align="center">
+					<table numcols="12" class="c5" style="white-space:nowrap">
+						<tr>
+							<td colspan="11" class="c5-title"> C7.11 &mdash; OBTAINING FINAL TK# </td>
+							<td class="c5-title" style="text-align:right;"> &Delta; </td>
+						</tr>
+						<tr>
+							<td class="tk-white1" style="text-align:left;">&nbsp;AF </td>
+							<td class="tk-white1"> &nbsp; 0* &nbsp; </td>
+							<td class="tk-white1"> &nbsp; 1 &nbsp; </td>
+							<td class="tk-white1"> &nbsp; 2 &nbsp; </td>
+							<td class="tk-white1"> &nbsp; 3 &nbsp; </td>
+							<td class="tk-white1"> &nbsp; 4 &nbsp; </td>
+							<td class="tk-white1"> &nbsp; 6 &nbsp; </td>
+							<td class="tk-white1"> &nbsp; 8 &nbsp; </td>
+							<td class="tk-white1"> &nbsp; 11 &nbsp; </td>
+							<td class="tk-white1"> &nbsp; 14 &nbsp; </td>
+							<td class="tk-white1"> &nbsp; 18 &nbsp; </td>
+							<td class="tk-white1"> &nbsp; 26 &nbsp; </td>
+						</tr>
+						<tr style="border-bottom-style:solid; border-bottom-width:1px;">
+							<td class="tk-blue1"> AERIAL AF </td>
+							<td class="tk-blue2"> &nbsp; 0 &nbsp; </td>
+							<td class="tk-blue2"> &nbsp; 0 &nbsp; </td>
+							<td class="tk-blue2"> &nbsp; 1 &nbsp; </td>
+							<td class="tk-blue2"> &nbsp; 2 &nbsp; </td>
+							<td class="tk-blue2"> &nbsp; 3 &nbsp; </td>
+							<td class="tk-blue2"> &nbsp; 3 &nbsp; </td>
+							<td class="tk-blue2"> &nbsp; 4 &nbsp; </td>
+							<td class="tk-blue2"> &nbsp; 4 &nbsp; </td>
+							<td class="tk-blue2">  </td>
+							<td class="tk-blue2">  </td>
+							<td class="tk-blue2">  </td>
+						</tr>
+						<tr>
+							<td colspan="12" style="font-size:90%;"> *Not AFV vs Mines if any hull AF = 0; Subtract from MODIFIED TK# to get FINAL TK#</td>
+						</tr>
+						<tr>
+							<td colspan="12" > <b>AERIAL AF:</b> Aircraft or Underbelly Hit; A-T Mine DRM (B28.52) </td>
+						</tr>
+					</table>
+				</td>
+<!-- END: OBTAINING FINAL TK ************************************************************ -->
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td align="center" width="1100px">
+		<!-- BEGIN: AFV DESTRUCTION TABLE ********************************************************** -->
+		<table numcols="9" bgcolor="#85C7E5" align="center" class="c5-1000" style="margin-top:0.10cm; white-space:nowrap">
+			<tr>
+				<td colspan="9" class="c5-title"> C7.7 &mdash; AFV DESTRUCTION TABLE </td>
+			</tr>
+			<tr>
+				<td class="tk-white1">  </td>
+				<td class="tk-white1"> &nbsp; Bomb/ &nbsp; </td>
+				<td class="tk-white1" colspan="3">  </td>
+				<td class="tk-white1"> &nbsp; <font class="tk-red"> Indirect </font> &nbsp; </td>
+				<td class="tk-white1"> &nbsp; <font class="tk-purple"> A-P </font> &nbsp; </td>
+				<td class="tk-white1"> &nbsp; <font class="tk-purple"> AA-T </font> &nbsp; </td>
+				<td class="tk-white1">  </td>
+			</tr>
+			<tr>
+				<td class="tk-title"> &nbsp; Final Effects DR &nbsp; </td>
+				<td class="tk-white1"> &nbsp; Direct Fire<sup>C</sup> &nbsp; </td>
+				<td class="tk-white1"> &nbsp; DC<sup>D</sup> &nbsp; </font></td>
+				<td class="tk-white1"> &nbsp; FT/MOL &nbsp; </td>
+				<td class="tk-white1"> &nbsp; MG<sup>F</sup> &nbsp; </font></td>
+				<td class="tk-white1"> &nbsp; <font class="tk-red"> Fire<sup>E</sup> &nbsp; </font></td>
+				<td class="tk-white1"> &nbsp; <font class="tk-purple"> Mines<sup>G</sup> &nbsp; </font></td>
+				<td class="tk-white1"> &nbsp; <font class="tk-purple"> Mines<sup>G</sup> &nbsp; </font></td>
+				<td class="tk-white1"> &nbsp; <font class="tk-green"> CC &nbsp; </font></td>
+			</tr>
+			<tr>
+				<td class="tk-blue1" style="text-align:right;"> <sup>A</sup>&le; Half TK# / <font class="tk-red">K
+					</font> / <font class="tk-purple">1KIA</font> / <font class="tk-green">CCV: </td>
+				<td class="tk-blue2"> Burn </td>
+				<td class="tk-blue2"> Burn </td>
+				<td class="tk-blue2"> Burn </td>
+				<td class="tk-blue2"> Burn </td>
+				<td class="tk-blue2"> <font class="tk-red"> Burn </font></td>
+				<td class="tk-blue2"> <font class="tk-purple"> Im </font></td>
+				<td class="tk-blue2"> <font class="tk-purple"> Burn </font></td>
+				<td class="tk-blue2"> <font class="tk-green"> Burn </font></td>
+			</tr>
+			<tr>
+				<td class="tk-white1" style="text-align:right;"> <sup>A</sup> TK# / <font class="tk-red">K
+					</font> / <font class="tk-purple">1KIA</font> / <font class="tk-green">CCV: </td>
+				<td class="tk-white2"> Elim </td>
+				<td class="tk-white2"> Elim </td>
+				<td class="tk-white2"> Burn </td>
+				<td class="tk-white2"> Elim </td>
+				<td class="tk-white2"> <font class="tk-red"> Elim </font></td>
+				<td class="tk-white2"> <font class="tk-purple"> Im </font></td>
+				<td class="tk-white2"> <font class="tk-purple"> Elim </font></td>
+				<td class="tk-white2"> <font class="tk-green"> Elim </font></td>
+			</tr>
+			<tr>
+				<td class="tk-blue1" style="text-align:right;"> = TK# / <font class="tk-red">K 
+					</font> / <font class="tk-purple">1KIA</font> / <font class="tk-green">CCV: </td>
+				<td class="tk-blue2"> Im<sup>H</sup>/Sh<sup>T</sup> </td>
+				<td class="tk-blue2"> Im<sup>H</sup>/Sh<sup>T</sup> </td>
+				<td class="tk-blue2"> Elim<sup>A</sup> </td>
+				<td class="tk-blue2"> Stun </td>
+				<td class="tk-blue2"> <font class="tk-red"> Im<sup>H</sup>/Sh<sup>T</sup> </font></td>
+				<td class="tk-blue2"> <font class="tk-purple"> Im </font></td>
+				<td class="tk-blue2"> <font class="tk-purple"> Elim </font></td>
+				<td class="tk-blue2"> <font class="tk-green"> Im </font></td>
+			</tr>
+			<tr>
+				<td class="tk-white1" style="text-align:right;"> HE 1 > Final TK# / <font class="tk-red">K </td>
+				<td class="tk-white2"> Im<sup>H</sup>/Sh<sup>T</sup> </td>
+				<td class="tk-white2"> Im<sup>H</sup>/Sh<sup>T</sup> </td>
+				<td class="tk-white2"> NA </td>
+				<td class="tk-white2"> NA </td>
+				<td class="tk-white2"> <font class="tk-red"> Im<sup>H</sup>/Sh<sup>T</sup> </font></td>
+				<td class="tk-white2"> <font class="tk-purple"> NA </font></td>
+				<td class="tk-white2"> <font class="tk-purple"> NA </font></td>
+				<td class="tk-white2"> <font class="tk-green"> NA </font></td>
+			</tr>
+			<tr>
+				<td class="tk-blue1" style="text-align:right;"> Non-HE<sup>B</sup> 1 > Final TK# </td>
+				<td class="tk-blue2"> P.Sh </td>
+				<td class="tk-blue2"> NA </td>
+				<td class="tk-blue2"> NA </td>
+				<td class="tk-blue2"> NA </td>
+				<td class="tk-blue2"> <font class="tk-red"> NA </font></td>
+				<td class="tk-blue2"> <font class="tk-purple"> NA </font></td>
+				<td class="tk-blue2"> <font class="tk-purple"> NA </font></td>
+				<td class="tk-blue2"> <font class="tk-green"> NA </font></td>
+			</tr>
+			<tr>
+				<td colspan="9" style="font-size:80%;"> <b><sup>A</sup></b>: -1 DRM to Final To Kill DR for Burning Wreck 
+					determination (only) if AFV has <font class="tk-red">Red CS#</font>
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b><sup>B</sup></b>: Includes HEAT
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b><sup>C</sup></b>: Includes Aerial Fire
+				</td>
+			</tr>
+			<tr>
+				<td colspan="9" style="font-size:80%;"> <b><sup>D</sup></b>: Requires Position DR (C7.346)
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <font class="tk-red"><b><sup>E</sup></b></font>: Use Original IFT DR for Hit Location (C1.55)
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b><sup>F</sup></b>: Includes 12.7mm and 15mm and Aerial Fire
+				</td>
+			</tr>
+			<tr>
+				<td colspan="9" style="font-size:80%;"> <font class="tk-purple"><b><sup>G</sup></b></font>: If AFV's lowest hull AF is 0, treat it as an unarmored vehicle
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b><font class="tk-red">K</font></b> is the DR required for a K result on the IFT
+			</tr>
+			<tr>
+				<td colspan="9" style="font-size:80%;"> <font class="tk-purple"><b>1KIA</b></font> is the DR required for a 1KIA result on the IFT
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b><sup>H/<span style="color:#E60000;">H</span></sup></b>: Hull Hit
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b><sup>T/<span style="color:#E60000;">T</span></sup></b>: Turret Hit
+				</td>
+			</tr>
+		</table>
+<!-- END: AFV DESTRUCTION TABLE ******************************************** -->
+	</td>
+</tr>
+<tr>
+	<td>
+		<br>
+		<br>
+	</td>
+</tr>
+</table>
+
+</body>
+</html>

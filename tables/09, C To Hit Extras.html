@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Ordnance To Kill </title>
+</head>
+
+<!-- ************************************************************************************ -->
+
+<style type="text/css">
+	table.tohit { font-size:100%; border-collapse:collapse;
+		border:2px solid black; background-color:#FFFFFF; 
+		margin-left:0.25cm; margin-right:0.25cm; }
+
+	td.note { text-align:left; font-size:80%; }
+	td.note-top { text-align:left; vertical-align:top; font-size:80%; }
+	img.chit { border:1px solid black; }
+	img.chit-wrap { border:1px solid black; float:left; margin:2px 5px 2px 5px}
+	img.chit-noborder { float:left; margin:2px 5px 2px 5px}
+	sup.sf { font-size:70%; }
+	
+	table.other {margin-top:0.2cm; margin-bottom:0.2cm; margin-left:0.2cm; margin-right:0.2cm;
+			border-collapse:collapse; table-layout:fixed; 
+			padding-top:1.2cm; padding-bottom:1.2cm; padding-left:1.2cm; padding-right:1.2cm; }
+	
+	td.tohit-title1 { font-weight:bold; border-collapse:collapse; font-size:120%; text-align:center; }
+	td.tohit-title2a { font-size:100%; font-weight:bold; border-collapse:collapse; background-color:#FFFFFF; text-align:center; }
+	td.tohit-title2b { font-size:100%; font-weight:bold; border-collapse:collapse; background-color:#FFFFFF; }
+
+	td.tohit-bn { font-size:100%; border-collapse:collapse; background-color:#D5E6ED; }
+	td.tohit-bnc { font-size:100%; border-collapse:collapse; background-color:#D5E6ED; text-align:center; }
+	td.tohit-bb { font-size:100%; border-collapse:collapse; background-color:#D5E6ED; text-align:right; font-weight:bold; }
+	td.tohit-br { font-size:100%; border-collapse:collapse; background-color:#D5E6ED; text-align:left; font-weight:bold; color:#E60000; }
+	td.tohit-wn { font-size:100%; border-collapse:collapse; }
+	td.tohit-wnc { font-size:100%; border-collapse:collapse; text-align:center; }
+	td.tohit-wb { font-size:100%; border-collapse:collapse; text-align:right; font-weight:bold; }
+	td.tohit-wr { font-size:100%; border-collapse:collapse; text-align:left; font-weight:bold; color:#E60000; }
+
+	td.border-na { border-collapse:collapse; border:1px solid black;
+		border-top-style:solid; border-top-width:1; border-top-color:red;
+		border-bottom-style:solid; border-bottom-width:1; border-bottom-color:red;
+		border-left-style:solid; border-left-width:1; border-left-color:red;
+		border-right-style:solid; border-right-width:1; border-right-color:red }
+		
+	td.border-bottom { border-collapse:collapse; 
+		border-bottom-style:solid; border-bottom-width:1; border-bottom-color:black }
+
+	td.chart-cell { padding-top:0.25cm; padding-bottom:0.25cm; padding-right:5px; padding-left:5px; }
+	table.c5 { border-collapse:collapse; background-color:#FFFFFF;
+		border:2px solid black; ; margin-left:0.25cm; margin-right:0.25cm; }
+	table.c5b { border-collapse:collapse; background-color:#FFFFFF; }
+	td.c5-title { font-weight:bold; font-size:120%; border-collapse:collapse; }
+
+	td.c5-w0 { font-size:100%; border-collapse:collapse; width:50px; font-weight:bold; text-align:center; }
+	td.c5-w1 { font-size:100%; border-collapse:collapse; width:20px; font-weight:bold; text-align:center; }
+	td.c5-w2 { font-size:100%; border-collapse:collapse; text-align:left; }
+	td.c5-w3 { font-size:100%; border-collapse:collapse; text-align:right; }
+	td.c5-w4 { font-size: 85%; border-collapse:collapse; text-align:right; color:#E60000; }
+	td.c5-b0 { font-size:100%; border-collapse:collapse; width:50px; font-weight:bold; background-color:#D5E6ED; text-align:center; }
+	td.c5-b1 { font-size:100%; border-collapse:collapse; width:20px; font-weight:bold; background-color:#D5E6ED; text-align:center; }
+	td.c5-b2 { font-size:100%; border-collapse:collapse; text-align:left; background-color:#D5E6ED; }
+	td.c5-b3 { font-size:100%; border-collapse:collapse; text-align:right; background-color:#D5E6ED; }
+
+	font.c5-dagger { color:#E60000; } 
+	font.c5-at { color:#FF00FF; }
+	font.c5-L { color:#00C000; }
+	font.c5-bullet-r { color:#E60000; }
+	font.c5-bullet-b { color:#000000; }
+	font.c5-HH { color:#E60000; }
+	font.c5-G { color:#7E00D2; }
+	font.c5-S { color:#E60000; }
+
+	table.tk { border-collapse:collapse; border:2px solid black; background-color:#FFFFFF; margin-left:0.25cm; margin-right:0.5cm; }
+	table.tk1 { border-collapse:collapse; background-color:#FFFFFF; }
+	td.tk-title { font-weight:bold; }
+	td.tk-white1 { text-align:center; font-weight:bold; }
+	td.tk-white2 { text-align:center; }
+	td.tk-white3 { text-align:left; }
+	td.tk-white4 { text-align:left; font-weight:bold; }
+	td.tk-blue1 { text-align:center; background-color:#D5E6ED; font-weight:bold; }
+	td.tk-blue2 { text-align:center; background-color:#D5E6ED; }
+	td.tk-blue3 { text-align:left; background-color:#D5E6ED; }
+	td.tk-grey1 { text-align:center; background-color:#CCCCCC; font-weight:bold; }
+	td.tk-grey2 { text-align:center; background-color:#CCCCCC; }
+	td.tk-grey3 { text-align:left; background-color:#CCCCCC; }
+	td.tk-grey4 { text-align:left; background-color:#CCCCCC; font-weight:bold; }
+
+	font.tk-orange { color:#E19600; }
+	font.tk-brown { color:#9D7900; }
+	font.tk-red { color:#E60000; }
+	font.tk-purple { color:#7E00D2; }
+	font.tk-grey { color:#AAAAAA; }
+	font.tk-green { color:#008000; }
+	font.tk-yellow { color:#C1C100; }
+	font.tk-teal { color:#23BFAD; }
+	font.tk-pink { color:#FF5DD9; }
+	font.tk-blue { color:#67ACDA; }
+	font.tk-ltblue { color:#66CCFF; }
+
+	@media print
+	{
+		.page-break { display:block; page-break-after:always }
+	}
+
+</style>
+
+<body style="background-color:#85C7E5">
+
+<!-- ************************************************************************************ -->
+<!-- Extra C Tables ********************************************************************* -->
+<!-- ************************************************************************************ -->
+
+<!-- ROW #1, START -->
+<!-- BEGIN: UNARMORED VEHICLE DESTRUCTION TABLE ***************************************** -->
+		<table numcols="6" class="c5" style="white-space:nowrap; width:1100px;">
+			<tr>
+				<td colspan="6" class="c5-title"> UNARMORED VEHICLE DESTRUCTION TABLE: </td>
+			</tr>
+			<tr>
+				<td>  </td>
+				<td class="tk-white1" style="column-width:200px"> &nbsp; Bomb/Ordnance &nbsp; </td>
+				<td class="tk-white1" style="column-width:200px"> &nbsp; <font class="tk-red"> FT/ </font> &nbsp; </td>
+				<td class="tk-white1" style="column-width:200px"> &nbsp; <font class="tk-red"> A-P Mine/Non-Ordnance/ </font> &nbsp; </td>
+				<td style="column-width:200px">  </td>
+				<td style="column-width:200px">  </td>
+			</tr>
+			<tr>
+				<td class="tk-title"> &nbsp; Final Effects DR &nbsp; </td>
+				<td class="tk-white1"> &nbsp; Direct Fire &nbsp; </td>
+				<td class="tk-white1"> &nbsp; <font class="tk-red"> MOL </font> &nbsp; </font></td>
+				<td class="tk-white1"> &nbsp; <font class="tk-red"> Indirect Fire/DC &nbsp; </font></td>
+				<td class="tk-white1"> &nbsp; <font class="tk-purple"> A-T Mine<sup>1</sup> &nbsp; </font></td>
+				<td class="tk-white1"> &nbsp; <font class="tk-green"> CC &nbsp; </font></td>
+			</tr>
+			<tr>
+				<td class="tk-blue1" style="text-align:right;"> &le; Half TK#/<font class="tk-red">&#x2605; Vehicle IFT #</font>/<font class="tk-purple">1KIA</font>/<font class="tk-green">CCV: </td>
+				<td class="tk-blue2"> Burn </td>
+				<td class="tk-blue2"> <font class="tk-red"> Burn </font></td>
+				<td class="tk-blue2"> <font class="tk-red"> Burn </font></td>
+				<td class="tk-blue2"> <font class="tk-purple"> Burn </font></td>
+				<td class="tk-blue2"> <font class="tk-green"> Burn </font></td>
+			</tr>
+			<tr>
+				<td class="tk-white1" style="text-align:right;"> < TK#/<font class="tk-red">&#x2605; Vehicle IFT #</font>/<font class="tk-purple">1KIA</font>/<font class="tk-green">CCV: </td>
+				<td class="tk-white2"> Elim </td>
+				<td class="tk-white2"> <font class="tk-red"> Burn </font></td>
+				<td class="tk-white2"> <font class="tk-red"> Elim </font></td>
+				<td class="tk-white2"> <font class="tk-purple"> Burn </font></td>
+				<td class="tk-white2"> <font class="tk-green"> Elim </font></td>
+			</tr>
+			<tr>
+				<td class="tk-blue1" style="text-align:right;"> = TK#/<font class="tk-red">&#x2605; Vehicle IFT #</font>/<font class="tk-purple">1KIA</font>/<font class="tk-green">CCV: </td>
+				<td class="tk-blue2"> Im </td>
+				<td class="tk-blue2"> <font class="tk-red"> Elim </font></td>
+				<td class="tk-blue2"> <font class="tk-red"> Im </font></td>
+				<td class="tk-blue2"> <font class="tk-purple"> Burn </font></td>
+				<td class="tk-blue2"> <font class="tk-green"> Im </font></td>
+			</tr>
+			<tr>
+				<td colspan="6" style="font-size:80%;"> <b><sup><span style="color:#7E00D2;">1</span></sup></b>: > KIA = Elim (B28.52) </td>
+			</tr>
+		</table>
+<!-- END: UNARMORED VEHICLE DESTRUCTION TABLE ******************************************* -->
+<!-- ROW #1, END -->
+
+<!-- ROW #2, START -->
+<!-- BEGIN: GUN DESTRUCTION TABLE ****************************************** -->
+		<table numcols="2" class="c5" style="width:1100px; margin-top:0.10cm; background-color:#85C7E5; border:0px; border-collapse:collapse; font-size:90%">
+			<tr>
+
+				<td rowspan="3">
+					<table numcols="4" style="table-layout:fixed; width:600px;" class="c5">
+						<tr style="white-space:nowrap">
+							<td colspan="3" class="c5-title"> C11.6 GUN DESTRUCTION TABLE<span style="font-size:80%;"><sup>1</sup></span> </td>
+							<td class="c5-title" style="text-align:right;"> &Delta;&nbsp; </td>
+						</tr>
+						<tr style="white-space:nowrap">
+							<td>  </td>
+							<td style="column-width:40px" class="tk-white1"> Ordnance </td>
+						<td style="column-width:120px" class="tk-white1"> MG/IFE/Small Arms/ </td>
+						<td>  </td>
+						</tr>
+						<tr style="white-space:nowrap">
+							<td>  </td>
+							<td style="column-width:40px" class="tk-white1"> Bomb/OBA </td>
+							<td style="column-width:1500px" class="tk-white1"> FT<sup>2</sup>/MOL<sup>2</sup>/OVR<sup>2</sup> </td>
+							<td class="tk-white1"> DC </td>
+						</tr>
+						<tr style="white-space:nowrap">
+							<td class="tk-blue1" style="text-align:left;"> &le; Final<sup>4</sup> KIA </td>
+							<td style="column-width:40px" class="tk-blue2"> Elim<sup>3</sup> </td>
+							<td style="column-width:80px" class="tk-blue2"> Random SW/Gun Dest </td>
+							<td class="tk-blue2"> Elim </td>
+						</tr>
+						<tr style="white-space:nowrap">
+							<td class="tk-white1" style="text-align:left;"> = Final<sup>4</sup> K </td>
+							<td style="column-width:40px" class="tk-white2"> Malf-CR<sup>5</sup> </td>
+							<td style="column-width:80px" class="tk-white2"> NA </td>
+							<td class="tk-white2"> Malf-CR </td>
+						</tr>
+						<tr style="white-space:nowrap">
+							<td class="tk-blue1" style="text-align:left;"> = CH </td>
+							<td style="column-width:40px" class="tk-blue2"> Elim </td>
+							<td style="column-width:80px" class="tk-blue2"> NA </td>
+							<td class="tk-blue2"> NA </td>
+						</tr>
+						<tr>
+							<td colspan="4"  style="font-size:80%;"> <b>Elim:</b> Gun and manning Infantry are eliminated. </td>
+						</tr>
+						<tr>
+							<td colspan="4"  style="font-size:80%;"> <b>Malf-CR:</b> Gun is malfunctioned; moving Infantry suffers Casualty Reduction. </td>
+						</tr>
+						<tr>
+							<td colspan="4" style="font-size:80%;"> <b>Random SW/Gun Dest:</b> Check for Random SW/Gun Destruction (A9.74). </td>
+						</tr>
+						<tr>
+							<td colspan="4"  style="font-size:80%;"> <sup>1</sup> If in tow or being (un)hooked, a Gun can only be destroyed if its vehicle is Eliminated  (C10.1-.12). </td>
+						</tr>
+						<tr>
+							<td colspan="4"  style="font-size:80%;"> <sup>2</sup> Gunshield is NA to FT/MOL-"only" attack (C11.51). </td>
+						</tr>
+						<tr>
+						<td colspan="4"  style="font-size:80%;"> <sup>3</sup> If there are Personnel in the Location, unpossessed Guns check for Random SW/Gun Destruction if KIA achieved via Indirect fire. </td>
+						</tr>
+						<tr>
+							<td colspan="4"  style="font-size:80%;"> <sup>4</sup> Prior to applying Gunshield DRM (C11.4). </td>
+						</tr>
+						<tr>
+							<td colspan="4"  style="font-size:80%;"> <sup>5</sup> K result = Elim if AP was fired (C11.52). </td>
+						</tr>
+					</table>
+				</td>
+<!-- END: GUN DESTRUCTION TABLE ********************************************************* -->
+
+<!-- BEGIN: C7.53 DUD ******************************************************************* -->
+				<td>
+					<table numcols="3" class="c5" style="width:450px">
+						<tr>
+							<td colspan="3"> <b>C7.35 DUD:</b> Any Original 12 TK DR=No Effect </td>
+						</tr>
+						<tr>
+							<td style="width:140px"> <b>C2.21 GUN SIZE:</b> </td>
+							<td style="width:10px; border-top-style:solid; border-top-width:1px;"> Overscore: </td>
+							<td> &nbsp; AP NA </td>
+						</tr>
+						<tr>
+							<td>  </td>
+							<td style="border-bottom-style:solid; border-bottom-width:1px;"> Underscore: </td>
+							<td> &nbsp; HE NA </td>
+						</tr>
+						<tr>
+							<td colspan="3"> <b>D4.3 UNDERBELLY HIT:</b> </td>
+						</tr>
+						<tr>
+							<td colspan="3" style="font-size:90%;"> Turret Hit=Hull Bottom Hit; &nbsp; Use Aerial AF </td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+<!-- BEGIN: D3.2 TARGET FACING ********************************************************** -->
+			<tr>
+				<td>
+					<table numcols="2" class="c5" style="margin-top:5px; width:450px;">
+						<tr>
+							<td colspan="2" class="c5-title"> D3.2 TARGET FACING </td>
+						</tr>
+						<tr>
+							<td colspan="2"> When Fire Originates in Same Hex (Case E; C5.5) </td>
+						</tr>
+						<tr>
+							<td style="font-size:90%; width:150px;"> &nbsp; &nbsp; Rear Target Facing </td>
+							<td style="font-size:90%;"> TH DR <font class="tk-purple">colored dr</font> = 1-2 </td>
+						</tr>
+						<tr>
+							<td style="font-size:90%;"> &nbsp; &nbsp; Side Target Facing </td>
+							<td style="font-size:90%;"> TH DR <font class="tk-purple">colored dr</font> = 3-4 </td>
+						</tr>
+						<tr>
+							<td style="font-size:90%;"> &nbsp; &nbsp; Front Target Facing </td>
+							<td style="font-size:90%;"> TH DR <font class="tk-purple">colored dr</font> = 5-6 </td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+<!-- BEGIN: C3.9 LOCATION OF VEHICULAR HIT ********************************************** -->
+			<tr>
+				<td>
+					<table numcols="2" class="c5" style="margin-top:5px; width:450px;">
+						<tr>
+							<td colspan="2" class="c5-title"> C3.9 LOCATION OF VEHICULAR HIT &nbsp; &Delta; </td>
+						</tr>
+						<tr>
+							<td style="width:100px;"><b>&nbsp; Turret Hit:</b> </td>
+							<td>TH DR colored dr < white dr </td>
+						</tr>
+						<tr>
+							<td style="width:100px;"><b>&nbsp; Hull Hit:</b></td>
+							<td>TH DR colored dr &ge; white dr </td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+<!-- ROW #2, END -->
+
+<!-- ROW #3, START -->
+<!-- BEGIN: C6.5 ACQUISITION ************************************************************ -->
+		<table numcols="2" class="c5" style="width:1100px; background-color:#85C7E5; border:0px; border-collapse:collapse;">
+			<tr>
+				<td rowspan="3" class="chart-cell" style="width:650px; font-size:90%">
+					<table numcols="3" class="c5">
+						<tr>
+							<td colspan="3" class="c5-title"">C6.5 ACQUISITION LOSS</td>
+						</tr>
+						<tr>
+							<td colspan="3"> A Gun's Acquired Target counter is removed if: </td>
+						</tr>
+						<tr>
+							<td colspan="3" class="tk-blue2" style="text-align:left; padding-left:15px; text-indent:-15px;"> &nbsp; &bullet;
+								the Gun leaves its present hex and/or uses Bounding First Fire vs its already-acquired target <i>[EXC: Gyrostabilizer; C6.55]</>; or </td>
+						</tr>
+						<tr>
+							<td colspan="3" class="tk-white2" style="text-align:left;"> &nbsp; &bullet; the Gun changes its CA without
+								firing on its already-acquired target during the current phase; or </td>
+						</tr>
+						<tr>
+							<td colspan="3" class="tk-blue2" style="text-align:left;"> &nbsp; &bullet; the Gun (or its CMG unless in a separate turret)
+								fires at a different target; or </td>
+						</tr>
+						<tr>
+							<td colspan="3" class="tk-white2" style="text-align:left;"> &nbsp; &bullet; the Gun malfunctions, or fires SMOKE or 
+								Canister, or uses IFE; or /td>
+						</tr>
+						<tr>
+							<td colspan="3" class="tk-blue2" style="text-align:left;"> &nbsp; &bullet; the Gun's manning Infantry becomes
+								broken, stunned, or shocked, or fires inherent FP/SW; or </td>
+						</tr>
+						<tr>
+							<td colspan="3" class="tk-white2" style="text-align:left;"> &nbsp; &bullet; the target is no longer in the Gun's
+								LOS  (See also C6.15) </td>
+						</tr>
+						<tr>
+							<td class="tk-white2" rowspan="3"> <img class="chit-wrap" src="chart-chits/area-red.png" width="50" height="50"/>  </td>
+							<td class="tk-white2" rowspan="3"> <img class="chit-wrap" src="chart-chits/area-white.png" width="50" height="50"/>  </td>
+							<td class="tk-blue2" style="text-align:left;"> In addition, a Gun's Area (only) Target Acquired Counter is removed if: </td>
+						</tr>
+						<tr>
+							<td class="tk-white2" style="text-align:left; padding-left:10px; text-indent:-10px;"> &bullet; the Gun is
+								Stabilized and declares Bounding First Fire vs its already-acquired hex without having lost LOS to it.
+								The removed Area Target Acquired counter is replaced by a &half;" Acquired Target counter before the attack is made (C6.55) </td>
+						</tr>
+						<tr>
+							<td class="tk-blue2" style="text-align:left; padding-left:10px; text-indent:-10px;"> &bullet; Note that an Area
+								Target Acquired counter cannot "follow" a unit that is entering a new hex. That unit would have to be reacquired (C6.521) </td>
+						</tr>
+					</table>
+				</td>
+<!-- BEGIN: C1.55 INDIRECT FIRE vs AFV IFT DRM ****************************************** -->
+				<td class="chart-cell" style="width:500px; font-size:90%">
+					<table numcols="4" class="c5" style="margin-top:-0.20cm; border-collapse:collapse;">
+						<tr>
+							<td colspan="3" class="c5-title" style="width:450px;"> C1.55 INDIRECT FIRE vs AFV IFT DRM </td>
+							<td class="c5-title" style="text-align:right;"> &Delta; &nbsp; </td>
+						</tr>
+						<tr>
+							<td rowspan="4" style="width:60px; text-align:center;"> <img class="chit-wrap" src="chart-chits/ffe.png" width="50" height="50" alt="ffe"/> </td>
+							<td class="tk-white1" style="width:120px;"> DRM </td>
+							<td class="tk-white1" style="width:120px;"> Cause </td>
+							<td rowspan="4" style="width:60px; text-align:center;"> <img class="chit-wrap" src="chart-chits/german-tank.jpg" width="50" height="50" alt="german-tank"/> </td>
+						</tr>
+						<tr style="white-space:nowrap">
+							<td class="tk-blue2"> -1 </td>
+							<td class="tk-blue2"> All AF &le; 4 </td>
+						</tr>
+						<tr style="white-space:nowrap">
+							<td class="tk-white2"> -1 </td>
+							<td class="tk-white2"> OT AFV </td>
+						</tr>
+						<tr style="white-space:nowrap">
+							<td class="tk-blue2"> +1 </td>
+							<td class="tk-blue2"> All AF &ge; 8 </td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+<!-- BEGIN: C3.7 CRITICAL HITS ********************************************************** -->
+			<tr>
+				<td class="chart-cell" style="width:450px; font-size:90%; ">
+					<table numcols="2" class="c5" style="margin-top:-0.20cm; border-collapse:collapse;">
+						<tr>
+							<td colspan="2" class="c5-title">C3.7 CRITICAL HITS</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="tk-blue1" style="text-align:left;"> AREA/VEHICLE Target Type: </td>
+						</tr>
+						<tr>
+							<td class="tk-blue2" width="20">  </td>
+							<td class="tk-blue2" style="text-align:left;"> Original TH DR of 2; NA for Deliberate Immobilization or MG TK </td>
+						</tr>
+						<tr>
+							<td colspan="2" class="tk-white1" style="text-align:left;"> INFANTRY Target Type: </td>
+						</tr>
+						<tr>
+							<td class="tk-white2" style="text-align:left;">  </td>
+							<td class="tk-white2" style="text-align:left;"> Final TH DR < half of Modified TH#, <font color="red"><b>or</b></font>
+								&le; half of Modified TH#,
+								<font color="red"><b>or</b></font>
+								TH DR=2 and subsequent dr=1,
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="tk-blue2" style="text-align:left;"> <b>FFE:</b> Original 2 IFT DR </td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+<!-- BEGIN: C3.6 IMPROBABLE HITS ******************************************************** -->
+			<tr>
+				<td class="chart-cell" style="width:450px; font-size:90%">
+					<table numcols="2" class="c5" style="margin-top:-0.20cm; border-collapse:collapse;">
+						<tr>
+							<td class="c5-title" style="width:500px;">C3.6 IMPROBABLE HITS</td>
+							<td class="c5-title" style="width:50px; text-align:right;"> &Delta; &nbsp; </td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td colspan="2">Original TH DR 2, subsequent dr: 1=CH; 2=Turent; 3=Hull; 4-6=Miss </td>
+							<td> </td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+<!-- ROW #3, END -->
+
+<!-- ROW #4, START -->
+<!-- BEGIN: C7.346 DC PLACEMENT vs AFV DR *********************************************** -->
+		<table numcols="2" class="c5" style="width:1100px; margin-top:-0.20cm; background-color:#85C7E5; border:0px; border-collapse:collapse;">
+			<tr>
+				<td rowspan="3" class="chart-cell" style="width:800px; font-size:90%">
+					<table numcols="3" class="c5">
+						<tr>
+							<td colspan="2" class="c5-title"> C7.346 DC PLACEMENT vs AFV DR </td>
+							<td class="c5-title" style="text-align:right;"> &Delta; &nbsp; </td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td style="width:100px;"><b>Placement DR</b></td>
+							<td style="width:400px;"><b>Result</b></td>
+							<td class="tk-white2" rowspan="3"> <img class="chit-wrap" src="chart-chits/dc.png" width="50" height="50"/> </td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td class="tk-blue2">&le; 5</td>
+							<td class="tk-blue3">Optimally Positioned; Use Aerial AF<td>
+						</tr>
+						<tr>
+							<td class="tk-white2">6-8</td>
+							<td class="tk-white3">Successfully Positioned; Use AF<td>
+						</tr>
+<!-- NOT SURE WHY I NEED THESE EXTRA BLANK TD'S; IT APPEARS COLSPAN=2 ISN'T WORKING CORRECTLY -->
+						<tr>
+							<td class="tk-blue2" style="vertical-align:top;">9-11</td>
+							<td class="tk-blue3" colspan="2">No Effect vs AFV; resolve vs target's vulnerable PRC as a Specific Collateral Attack<td>
+						</tr>
+						<tr>
+							<td class="tk-white2" style="vertical-align:top;">&ge; 12</td>
+							<td class="tk-white3" colspan="2">No Effect vs AFV or its PRC; resolve vs other unarmored units in AFV's Location and as an Area Fire attack (as well as vs any in Thrower's Location; A23.6)<td>
+						</tr>
+						<tr>
+							<td colspan="3" class="tk-white2" style="text-align:left;"><b>DRM:</b></td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td class="tk-blue2">+2</td>
+							<td class="tk-blue3" colspan="2">Motion/Non-Stopped AFV or concealed Target</td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td class="tk-white2">+2</td>
+							<td class="tk-white3" colspan="2">Thrown DC (or +3 if Thrown from Non-Stopped/Motion Conveyance)</td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td class="tk-blue2">+1</td>
+							<td class="tk-blue3" colspan="2">CX</td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td class="tk-white2">+1</td>
+							<td class="tk-white3" colspan="2">Placed/Thrown through hull front Target Facing</td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td class="tk-blue2">+1</td>
+							<td class="tk-blue3" colspan="2">AFV target is CE</td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td class="tk-white2">+1</td>
+							<td class="tk-white3" colspan="2">Thrown in AFPh (not as Opportunity Fire)</td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td class="tk-blue2">-1</td>
+							<td class="tk-blue3" colspan="2">Placed/Thrown through hull rear Target Facing</td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td class="tk-white2">-2</td>
+							<td class="tk-white3" colspan="2">Immobile or OT AFV target (each)</td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td class="tk-blue2">-2</td>
+							<td class="tk-blue3" colspan="2">Vehicle target is in Bypass in same hex</td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td class="tk-white2">-1/-2</td>
+							<td class="tk-white3" colspan="2">Elevation Advantage Case B (C7.22) as applicable</td>
+							<td> </td>
+						</tr>
+					</table>
+				</td>
+<!-- BEGIN: C2.5 CONDITIONAL ROF ******************************************************** -->
+				<td valign="top" class="chart-cell" style="width:550px; font-size:90%">
+					<table numcols="2" class="c5" style="margin-top:-0.20cm; border-collapse:collapse;">
+						<tr>
+							<td class="c5-title" style="width:500px;"> C2.5 CONDITIONAL ROF </td>
+							<td class="c5-title" style="width:50px; text-align:right;"> &Delta; &nbsp; </td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td colspan="2">Non-Vehicular NT Gun <i>[EXC: 76-82mm Mortar]</i> reduces ROF (for next shot in same phase) by 1 for CA change </td>
+							<td> </td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+<!-- BEGIN: LOWERED ROF ***************************************************************** -->
+			<tr>
+				<td valign="top" class="chart-cell" style="width:550px; font-size:90%">
+					<table numcols="1" class="c5" style="margin-top:-0.20cm; border-collapse:collapse;">
+						<tr>
+							<td class="c5-title" style="width:500px;"> LOWERED ROF </td>
+						</tr>
+						<tr>
+							<td class="tk-blue3">&nbsp; &bullet; IFE (C2.29) </td>
+						</tr>
+						<tr>
+							<td class="tk-white3">&nbsp; &bullet; Captured/non-Qualified Use (A21.12) </td>
+						</tr>
+						<tr>
+							<td class="tk-blue3">&nbsp; &bullet; Conditional ROF (C2.5) </td>
+						</tr>
+						<tr>
+							<td class="tk-white3">&nbsp; &bullet; Spotted Mortar Fire (C9.31) </td>
+						</tr>
+						<tr>
+							<td class="tk-blue3">&nbsp; &bullet; Using H#[9] (German Ordnance Note B)</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+<!-- BEGIN: LOST ROF ******************************************************************** -->
+			<tr>
+				<td valign="top" class="chart-cell" style="width:550px; font-size:90%">
+					<table numcols="1" class="c5" style="margin-top:-0.10cm; border-collapse:collapse;">
+						<tr>
+							<td class="c5-title" style="width:500px;"> LOST ROF </td>
+						</tr>
+						<tr>
+							<td class="tk-blue3">&nbsp; &bullet; Placement of Residual FP (A8.23) </td>
+						</tr>
+						<tr>
+							<td class="tk-white3">&nbsp; &bullet; Non-Mortar using Area Target (C3.33) </td>
+						</tr>
+						<tr>
+							<td class="tk-blue3">&nbsp; &bullet; Non-Opportunity Fire in AFPh (C5.2, A9.2) </td>
+						</tr>
+						<tr>
+							<td class="tk-white3">&nbsp; &bullet; Pinned (C5.4) </td>
+						</tr>
+						<tr>
+							<td class="tk-blue3">&nbsp; &bullet; Subsequent First Fire (A8.3) </td>
+						</tr>
+						<tr>
+							<td class="tk-white3">&nbsp; &bullet; 0 ROF gun using Conditional ROF (C2.5); place Intensive Fire counter </td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+<!-- ROW #4, END -->
+
+<!-- ROW #5, START -->
+<!-- BEGIN: C10.3 GUN MANHANDLING NUMBER MODIFICATIONS ********************************** -->
+		<table numcols="2" class="c5" style="width:1100px; margin-top:-0.10cm; background-color:#85C7E5; border:0px; border-collapse:collapse;">
+			<tr>
+				<td rowspan="3" class="chart-cell" style="width:1200px; font-size:90%">
+					<table numcols="3" class="c5">
+						<tr>
+							<td colspan="2" class="c5-title" style="width:400px;"> C10.3 GUN MANHANDLING NUMBER MODIFICATIONS </td>
+							<td class="c5-title" style="text-align:right;"> &Delta; &nbsp; </td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								Pushed by Good Order (as per C10.111) Crew at double its normal MF cost, provided it
+								makes a Final DR &le; its M# for each hex it attempts to enter.
+							</td>
+						</tr>
+						<tr>
+							<td class="tk-blue2">+x</td>
+							<td class="tk-blue3" colspan="2">*x is TEM of hexside crossed plus that of hex entered</td>
+						</tr>
+						<tr>
+							<td class="tk-white2">+y</td>
+							<td class="tk-white3" colspan="2">y is pushing units MF expenditure for hex entered</td>
+						</tr>
+						<tr>
+							<td class="tk-blue2">+3</td>
+							<td class="tk-blue3" colspan="2">Pushing into/from mud or deep snow</td>
+						</tr>
+						<tr>
+							<td class="tk-white2">-1</td>
+							<td class="tk-white3" colspan="2">Per extra pushing Crew/HS (-2 per Squad); Maximum DRM: -4</td>
+						</tr>
+						<tr>
+							<td class="tk-blue2">-2</td>
+							<td class="tk-blue3" colspan="2">Crossing a road hexside except in mud/deep snow</td>
+						</tr>
+						<tr>
+							<td class="tk-white2">-2</td>
+							<td class="tk-white3" colspan="2">Low Ammo counter placed on Gun prior to DR</td>
+						</tr>
+						<tr>
+							<td class="tk-blue2" style="width:100px;">-1/-2</td>
+							<td class="tk-blue3" style="width:400px;" colspan="2">Per Labor Status (B24.8)</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="font-size:90%; width:600px;">
+								Manhandling DR > M#: Move Fails <br>
+								Manhandling DR = M#: Move Succeeds; no further movement allowed <br>
+								Manhandling DR < M#: Move Succeeds; may continue movement <br>
+								* LOS Hindrance, Height Advantage, FFMO/FFNAM are NA
+							</td>
+							<td style="width:60px;"> <img class="chit-wrap" src="chart-chits/am-at-57L.png" width="50" height="50"/> </td>
+						</tr>
+					</table>
+				</td>
+<!-- BEGIN: A5.132 vs OVERSTACKED VEHICLES ********************************************** -->
+				<td valign="top" style="width:550px; font-size:90%">
+					<table numcols="1" class="c5" style="border-collapse:collapse; margin-top:0.2cm;">
+						<tr style="line-height:15px;">
+							<td class="c5-title" style="width:500px;"> A5.132 vs OVERSTACKED VEHICLES </td>
+						</tr>
+						<tr style="line-height:10px;">
+							<td>Final TH DR > Modified TH# by < # of vehicles<sup>*</sup> hits other vehicle on dr < # of vehicles<sup>*</sup> in hex</td>
+						</tr>
+						<tr style="line-height:10px;">
+							<td style="font-size:90%"><sup>*</sup> Excluding the firing vehicle if in same hex</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+<!-- BEGIN: C2.6 GUN ELEVATION/DEPRESSION *********************************************** -->
+			<tr>
+				<td valign="top" style="width:550px; font-size:90%">
+					<table numcols="2" class="c5" style="border-collapse:collapse; margin-top:0.3cm;">
+						<tr style="line-height:10px;">
+							<td class="c5-title" style="width:500px;"> C2.6 GUN ELEVATION/DEPRESSION </td>
+							<td class="c5-title" style="text-align:right;"> &Delta; &nbsp; </td>
+						</tr>
+						<tr>
+							<td colspan="2">Range &ge; Elevation Difference unless AA capable or MTR </td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+<!-- BEGIN: C3.8 MULTIPLE HITS *********************************************** -->
+			<tr>
+				<td valign="top" style="width:550px; font-size:90%">
+					<table numcols="2" class="c5" style="border-collapse:collapse; margin-top:0.3cm;">
+						<tr style="line-height:10px;">
+							<td class="c5-title" style="width:500px;"> C3.8 MULTIPLE HITS </td>
+							<td class="c5-title" style="text-align:right;"> &Delta; &nbsp; </td>
+						</tr>
+						<tr>
+							<td colspan="2" style="padding-left:10px; text-indent:-10px;">
+								- Gun must be &le; 40mm <u>or</u> U.S. and British Multi-Applicable Vehicle Note R <u>or</u> Chinese Vehicle Note 7
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="padding-left:10px; text-indent:-10px;">
+								- Any non-Critical Hit TH DR of Doubles yields choice of two resolution DR
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+<!-- ROW #5, END -->
+
+</body>
+</html>

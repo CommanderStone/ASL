@@ -55,6 +55,7 @@ switch ($phase) {
   <a href="?content=phaser&phase=rout" class="w3-bar-item w3-button w3-black" style="margin:2px">Rout Phase</a>
   <a href="?content=phaser&phase=advance" class="w3-bar-item w3-button w3-black" style="margin:2px">Advance Phase</a>
   <a href="?content=phaser&phase=close" class="w3-bar-item w3-button" style="margin:2px;background-color:#ff1f1f;color:white;">Close Combat Phase</a>
+  
 </div>
 
 
