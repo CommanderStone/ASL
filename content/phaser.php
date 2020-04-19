@@ -59,7 +59,7 @@ switch ($phase) {
 </div>
 
 
-  <div class="w3-container">
+  <div class="w3-container w3-auto">
     <p><b style="font-size:25px;"><?php echo $pphase;?> </b> <?php if ($pphase != "Status Summaries") {echo "<span class='w3-badge w3-blue'>A</span> = ATTACKER Action <span class='w3-badge w3-green'>B</span> = BOTH SIDES Action <span class='w3-badge w3-red'>D</span> = DEFENDER Action";}?></p>
 
   </div>
