@@ -1,0 +1,13 @@
+N;TABLES USED IN THIS PHASE
+T;Sniper Attack;<b>A14.3</b>
+T;Sniper Check;<b>A14.4</b>
+T;Heat of Battle;<b>A15.1</b>
+T;Flame Clearance Attempts;<b>B24.72</b>
+T;PF/PFk Availability;<b>C13.31</b>
+X;X
+
+N;FINAL FIRE SUMMARY
+O;<b>Unmarked:</b> Fire normally, but may not use Intensive Fire.
+O;<b>First Fire marker:</b> Area Fire (Sustained Fire) or Intensive Fire only against adjacent or same hex targets.
+O;<b>Final Fire/Intensive Fire marker:</b> No firing allowed.
+X;X

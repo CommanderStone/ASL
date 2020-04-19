@@ -40,8 +40,8 @@ body {
 <div class="w3-bar w3-border w3-card-4 w3-light-grey">
   <a href="?content=home" class="w3-bar-item w3-button w3-border-right <?php if ($content == "home") {echo "w3-yellow";}?>">Home</a>
   <div class="w3-dropdown-hover">
-    <button class="w3-bar-item w3-button w3-border-right <?php if ($content == "phaser") {echo "w3-yellow";}?>">Phase Reference</button>
-    <div class="w3-dropdown-content w3-bar-block w3-border">
+    <button class="w3-bar-item w3-button w3-border-right <?php if ($content == "phaser") {echo "w3-yellow";}?> ">Phase Reference</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border"  style="margin-top:35px;">
       <a href="?content=phaser&phase=status" class="w3-bar-item w3-button" style="margin:2px;background-color:#E7E3F6;">Status Summaries</a>
       <a href="?content=phaser&phase=rally" class="w3-bar-item w3-button" style="margin:2px;background-color:#007fff;">Rally Phase</a>
       <a href="?content=phaser&phase=prep" class="w3-bar-item w3-button" style="margin:2px;background-color:#ff8607;">Prep Fire Phase</a>

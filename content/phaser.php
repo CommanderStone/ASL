@@ -55,7 +55,7 @@ switch ($phase) {
   <a href="?content=phaser&phase=rout" class="w3-bar-item w3-button w3-black" style="margin:2px">Rout Phase</a>
   <a href="?content=phaser&phase=advance" class="w3-bar-item w3-button w3-black" style="margin:2px">Advance Phase</a>
   <a href="?content=phaser&phase=close" class="w3-bar-item w3-button" style="margin:2px;background-color:#ff1f1f;color:white;">Close Combat Phase</a>
-  
+
 </div>
 
 
@@ -96,6 +96,16 @@ switch ($phase) {
     createTables("phasedata/move_links.dat", "w3-pale-red");
     createTables("phasedata/move_mitte.dat", "w3-lime");
     createTables("phasedata/move_rechts.dat", "w3-grey");
+  break;
+  case "advanced":
+    createTables("phasedata/advanced_links.dat", "w3-pale-red");
+    createTables("phasedata/advanced_mitte.dat", "w3-lime");
+    createTables("phasedata/advanced_rechts.dat", "w3-grey");
+  break;
+  case "defensive":
+    createTables("phasedata/dff_links.dat", "w3-pale-red");
+    createTables("phasedata/dff_mitte.dat", "w3-lime");
+    createTables("phasedata/dff_rechts.dat", "w3-grey");
   break;
   case "rout":
     createTables("phasedata/rout_links.dat", "w3-pale-red");

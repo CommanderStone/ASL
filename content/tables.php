@@ -1,6 +1,6 @@
 <?php
 if(empty($_GET["table"])) {
-  $table = "01IFT";
+  $table = "01ift";
 }
 else {
   $table = htmlspecialchars($_GET["table"]);

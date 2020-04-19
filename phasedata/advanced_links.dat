@@ -1,0 +1,16 @@
+N;START:
+B;Drifting SMOKE
+A;Fire Ordnance Dispersed WP
+X;
+
+N;DURING:
+A;Fire
+A;Limber or unlimber (TI-unlimber) Guns
+A;Resolve Placed DC attacks
+A;Remove berserk if all Known Enemy eliminated with TPBF
+X;X
+
+N;END:
+B;Check Flame to Blaze or spreading Blaze
+B;Remove Prep Fire, Intensive Fire, No Fire, and Bounding Fire
+X;X

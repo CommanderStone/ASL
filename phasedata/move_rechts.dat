@@ -79,3 +79,53 @@ T;<b>Motion:</b> A vehicle that is not moving and not Stopped
 T;<b>Non-Stopped:</b> A vehicle that is moving and not Stopped
 T;<b>Moving Target (or Moving Vehicle):</b> A vehicle that is/has been in Motion and/or entered a new hex/used VBM this Player Turn
 X;X
+
+
+NB;;w3-white;
+X;X
+NB;;w3-white;
+X;X
+
+NC;Tables and Defensive First Fire Principles;w3-blue;
+X;X
+
+C;Tables used in this phase;tabl;
+T;Recovery;<b>A4.44*</b>
+T;Searching;<b>A12.152</b>
+T;Search Casualties;<b>A12.154</b>
+T;Sniper Attack;<b>A14.3</b>
+T;Sniper Check;<b>A14.4</b>
+T;Heat of Battle;<b>A15.1</b>
+T;Set DC;<b>A23.7*</b>
+T;Sewer Emergence;<b>B8.42</b>
+T;Climbing/Falling;<b>B11.41</b>
+T;Flame Clearance Attempts;<b>B24.72</b>
+T;Cellars;<b>B23.41</b>
+T;Manhandling;<b>C10.3</b>
+T;PF/PFk Availability;<b>C13.31</b>
+T;Excessive Speed Breakdown;<b>D2.5</b>
+T;HD Maneuver Attempt;<b>D4.22</b>
+T;Bog Check;<b>D8.21</b>
+T;Bog Removal;<b>D8.3</b>
+T;Hammada Immobilization DR;<b>F3.31</b>
+T;Sand Bog;<b>F7.31</b>
+T;Tank Hunter-Hero Creation;<b>G1.421</b>
+T;*Rule only; no table provided
+X;X
+
+C;DEFENSIVE FIRST FIRE PRINCIPLES;dffp;
+T;<b>FIRST FIRE</b>
+T;<b>Restriction:</b> Target must be moving, defender must not have a First Fire or Final Fire marker.
+T;<b>Penalty:</b> None.
+T;<b>Result:</b> Place a First Fire marker on defender, but not on any weapon that retains its ROF.
+O;
+T;<b>SUBSEQUENT FIRST FIRE</b>
+T;<b>Restriction:</b> Target must be moving, there must not be any other known enemy units closer to the defender,and the defender must not have a Final Fire marker.
+T;<b>Penalty: </b>Area Fire (½ FP), Sustained Fire (no ROF, B# –2, original B# becomes X#).
+T;<b>Result: </b>Place Final Fire marker on defender and any SW/Guns defender possesses (even if those SW/Guns were not previously marked, and even if those SW/Guns did not fire with the squad).
+T;
+T;<b>FINAL PROTECTIVE FIRE</b>
+T;<b>Restriction: </b>Target must have moved ADJACENT to defender.
+T;<b>Penalty:</b> MGs must fire, Area Fire, Sustained Fire, IFT DR is also a NMC roll for the defender.
+T;<b>Result:</b> Final Fire marker remains on defender and any SW/Guns defender possesses, unless the defender fails he NMC and breaks.
+X;X

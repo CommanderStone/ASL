@@ -1,0 +1,19 @@
+N;START:
+D;Fire Ordnance Dispersed SMOKE
+D;OBA
+X;X
+
+N;DURING:
+D;Designate Mortar Spotter
+D;Fire
+D;Declare Wire, Set DC, Roadblock, Path,
+D;Panji Clearance (TI)
+D;Flame Clearance (TI)
+D;Destroy or malfunction SW/Guns
+D;Dismantle or reassemble SW/Guns
+D;Limber or unlimber (TI-unlimber) Guns
+X;X
+
+N;END:
+D;Remove First Fire and Final Fire
+X;X
