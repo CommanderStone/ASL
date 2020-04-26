@@ -42,8 +42,7 @@ switch ($phase) {
 
 ?>
 
-<div class="w3-main w3-light-grey" >
-
+<div class="w3-main w3-light-grey">
   <!-- Header -->
   <div class="w3-bar w3-border w3-card-4" style="font-size:16px;font-weight:bold;">
   <a href="?content=phaser&phase=status" class="w3-bar-item w3-button" style="margin:2px;background-color:#E7E3F6;">Status Summaries</a>
@@ -57,7 +56,9 @@ switch ($phase) {
   <a href="?content=phaser&phase=close" class="w3-bar-item w3-button" style="margin:2px;background-color:#ff1f1f;color:white;">Close Combat Phase</a>
 
 </div>
-
+</div>
+</div> <!-- closing brackets for my header -->
+<div class="contentheight">
 
   <div class="w3-container w3-auto">
     <p><b style="font-size:25px;"><?php echo $pphase;?> </b> <?php if ($pphase != "Status Summaries") {echo "<span class='w3-badge w3-blue'>A</span> = ATTACKER Action <span class='w3-badge w3-green'>B</span> = BOTH SIDES Action <span class='w3-badge w3-red'>D</span> = DEFENDER Action";}?></p>

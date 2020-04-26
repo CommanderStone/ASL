@@ -3,7 +3,8 @@
 <!-- ************************************************************************************ -->
 
 <style type="text/css">
-	table 
+
+	table
 	{
 		font-size: 14px !important;
 	}
@@ -17,11 +18,33 @@
 	font.splat {face:times;}
 	td.align {text-align:left;}
 	tr.blue {background-color:#BEE6FF}
+
+
+
 </style>
+
+<script type="text/javascript">
+	var tableOffset = $("#table-1").offset().top;
+	var $header = $("#table-1 > thead").clone();
+	var $fixedHeader = $("#header-fixed").append($header);
+
+	$(window).bind("scroll", function() {
+	    var offset = $(this).scrollTop();
+
+	    if (offset >= tableOffset && $fixedHeader.is(":hidden")) {
+	        $fixedHeader.show();
+	    }
+	    else if (offset < tableOffset) {
+	        $fixedHeader.hide();
+	    }
+	});
+
+</script>
 
 <!-- ************************************************************************************ -->
 <center>
-<div style="max-width:38cm;"
+	<br>
+<div style="max-width:38cm;">
 
 	<tr>
 		<td style="text-align:left; font-size:120%; font-weight:bold">
@@ -29,7 +52,8 @@
 		</td>
 
 
-<table width="100%" numcols="16" cellborder="0" cellpadding="1" bgcolor="#F0F0F0" style="border:1 solid black; font-size:80%; border-collapse:collapse;">
+<table width="100%" numcols="16" cellborder="0" cellpadding="1" bgcolor="#F0F0F0" style="border:1px solid black; font-size:80%; border-collapse:collapse;" id="header-fixed">
+
 <tr valign="bottom">
 	<th align="left" >Rule#</th>
 	<th align="left" >Terrain</th>
@@ -48,7 +72,6 @@
 	<th align="left" >Fortifiable</th>
 	<th align="left" >Notes</th>
 </tr>
-
 <tr valign="top" class="blue">
 	<td>P3.</td>
 	<td>Barb-Wire Fence</td>
