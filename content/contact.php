@@ -9,7 +9,7 @@ if(!empty($_GET["submit"])) {
   $message = htmlspecialchars($_GET["message"]);
   $secure = trim(strtoupper(htmlspecialchars($_GET["secure"])));
   if($secure === "ASL"){
-    echo"its asl";
+    //echo"its asl";
     $secure = false;
     if(empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL) || empty($firstname) || empty($lastname) || empty($message)) {
       $form = true;
@@ -23,7 +23,8 @@ if(!empty($_GET["submit"])) {
 
   if (!$secure AND !$form AND !empty($_GET["submit"])) {
     echo "Alles ausgefüllt";
-    mail(kai.glanz@gmx.de,"ASL Assist Page,$message."email sent from: ".$firstname);
+    $mymail = "kai.glanz@gmx.de";
+    mail($mymail,"ASL Assist Page",$message."email sent from: ".$firstname);
 }
 
 ?>
