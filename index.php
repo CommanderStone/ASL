@@ -1,5 +1,6 @@
 <?php
 session_start();
+if(empty($_SESSION["ift"])) { $_SESSION["ift"] = "ift";}
 require"aslfunctions.php";
 if(empty($_GET["content"])) {
   $content = "home";
@@ -72,7 +73,13 @@ $filetoload = "content/".$content.".php";
   <div class="w3-dropdown-hover">
     <a href="?content=tables&table=01ift&bgcolor=CCCCCC" class="w3-bar-item w3-button w3-border-right <?php if ($content == "tables") {echo "w3-yellow";}?> ">Tables</a>
     <div class="w3-dropdown-content w3-bar-block w3-border"  style="margin-top:35px;">
+<?php
+if($_SESSION["ift"] ==   "iift") { ?>
+    <a href="?content=tables&table=01ift&bgcolor=CCCCCC" class="w3-bar-item w3-button" style="margin:2px;background-color:#CCCCCC;">IIFT</a>
+<?php }
+if($_SESSION["ift"] === "ift") {?>
     <a href="?content=tables&table=01ift&bgcolor=CCCCCC" class="w3-bar-item w3-button" style="margin:2px;background-color:#CCCCCC;">IFT</a>
+<?php } ?>
     <a href="?content=tables&table=02tohit&bgcolor=85C7E5" class="w3-bar-item w3-button" style="margin:2px;background-color:#85C7E5;">To Hit</a>
     <a href="?content=tables&table=03tokill&bgcolor=85C7E5" class="w3-bar-item w3-button" style="margin:2px;background-color:#85C7E5;">To Kill</a>
     <a href="?content=tables&table=04cc&bgcolor=F2D7C5" class="w3-bar-item w3-button" style="margin:2px;background-color:#F2D7C5">Close Combat</a>
@@ -87,12 +94,14 @@ $filetoload = "content/".$content.".php";
 <a href="?content=scenarioaid" class="w3-bar-item w3-button w3-border-right <?php if ($content == "scenarios") {echo "w3-yellow";}?>">Scenario Aid</a>
 <a href="?content=prefs" class="w3-bar-item w3-button w3-border-right <?php if ($content == "preferences") {echo "w3-yellow";}?>">Preferences</a>
 <a href="?content=contact" class="w3-bar-item w3-button w3-border-right <?php if ($content == "preferences") {echo "w3-yellow";}?>">Contact</a>
+<div class="w3-bar-item w3-button w3-border-right">IIFT? <form action="javascript:window.location.href=window.location.href" method="post"><input type="checkbox" name="iift" value="true" onclick="if(this.checked){this.form.submit();"/></form></div>
 </div>
 
 <!-- </div> -->
 
 
 <?php
+
 include $filetoload;
 ?>
 </div>

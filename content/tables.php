@@ -21,7 +21,14 @@ $tabletoload = "tables/".$table .".html";
 
   <!-- Header -->
   <div class="w3-bar w3-border w3-card-4" style="font-size:16px;font-weight:bold;">
-  <a href="?content=tables&table=01ift&bgcolor=CCCCCC" class="w3-bar-item w3-button" style="margin:2px;background-color:#CCCCCC;">IFT</a>
+    <?php
+    if($_SESSION["ift"] ==   "iift") { ?>
+        <a href="?content=tables&table=01ift&bgcolor=CCCCCC" class="w3-bar-item w3-button" style="margin:2px;background-color:#CCCCCC;">IIFT</a>
+    <?php }
+    if($_SESSION["ift"] === "ift") {?>
+        <a href="?content=tables&table=01ift&bgcolor=CCCCCC" class="w3-bar-item w3-button" style="margin:2px;background-color:#CCCCCC;">IFT</a>
+    <?php } ?>
+  
   <a href="?content=tables&table=02tohit&bgcolor=85C7E5" class="w3-bar-item w3-button" style="margin:2px;background-color:#85C7E5;">To Hit</a>
   <a href="?content=tables&table=03tokill&bgcolor=85C7E5" class="w3-bar-item w3-button" style="margin:2px;background-color:#85C7E5;">To Kill</a>
   <a href="?content=tables&table=04cc&bgcolor=F2D7C5" class="w3-bar-item w3-button" style="margin:2px;background-color:#F2D7C5">Close Combat</a>

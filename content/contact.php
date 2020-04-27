@@ -23,7 +23,7 @@ if(!empty($_GET["submit"])) {
 
   if (!$secure AND !$form AND !empty($_GET["submit"])) {
     echo "Alles ausgefüllt";
-    mail(kai.glanz@gmx.de,"ASL Assist Page,$message."email sent from: ".$firstname);
+    mail("kai.glanz@gmx.de","ASL Assist Page",$message."email sent from: ".$firstname);
 }
 
 ?>
